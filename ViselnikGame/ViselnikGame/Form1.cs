@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// TODO: Закоммитить последние изменения
+// TODO: Написать комментарии по коду
 namespace ViselnikGame
 {
     public partial class Form1 : Form
