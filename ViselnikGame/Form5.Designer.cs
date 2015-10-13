@@ -33,11 +33,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(63, 195);
+            this.button1.Location = new System.Drawing.Point(25, 364);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(162, 30);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -45,10 +45,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(657, 408);
             this.Controls.Add(this.button1);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "HANGED MAN";
             this.ResumeLayout(false);
 
         }

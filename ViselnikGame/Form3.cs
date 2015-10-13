@@ -18,12 +18,25 @@ namespace ViselnikGame
             
         }
 
-        private void form4(object sender, EventArgs e)
+        private void food(object sender, EventArgs e)
             {
             Form4 f4 = new Form4();
             this.Hide();
 
             f4.Show();
+            }
+
+        private void animals(object sender, EventArgs e) 
+            {
+            Form10 f10 = new Form10();
+            this.Hide();
+            f10.Show();
+            }
+        private void transport(object sender, EventArgs e) 
+            {
+            Form9 f9 = new Form9();
+            this.Hide();
+            f9.Show();
             }
        
         private void button4_Click(object sender, EventArgs e)
@@ -34,6 +47,16 @@ namespace ViselnikGame
         }
 
         private void form4()
+            {
+
+            }
+
+        private void transport()
+            {
+
+            }
+
+        private void animals()
             {
 
             }

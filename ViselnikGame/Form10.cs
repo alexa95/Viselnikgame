@@ -10,36 +10,24 @@ using System.Windows.Forms;
 
 namespace ViselnikGame
     {
-    public partial class Form4 : Form
+    public partial class Form10 : Form
         {
-
-
-
-        public Form4()
+        public Form10()
             {
             InitializeComponent();
-          
             }
 
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-
-
-        string[] food = { "SOUS", "PIPE", "SOUP", "POTATO" };
+        string[] animals = { "HARE", "DOG", "WOLF", "COW", "CAT" };
         int i = 0, n = 0, k = 0;
         private void button_clic(object sender, EventArgs e)
-        {
+            {
             // При нажатии на кнопку меняем её цвет.
-       ActiveControl.BackColor = Color.Red;
-        game();    
-        }
+            ActiveControl.BackColor = Color.Red;
+            game();
+            }
 
-        void button_color() 
+        void button_color()
             {
             //Изменение цвета кнопок на начальный.
             for (int d = 2; d < 28; d++)
@@ -47,38 +35,38 @@ namespace ViselnikGame
                 this.Controls["button" + (d).ToString()].BackColor = Color.Silver;
                 }
             }
-    
-  
+
+
         void game()
             {
 
             // Выбор слова. 
-            for (; i < food.Length; )
+            for (; i < animals.Length; )
                 {
-               
+
                 //  Запись  слова в виде массива символов.
-                char[] word = food[i].ToCharArray();
+                char[] word = animals[i].ToCharArray();
                 int q = 0;
                 // Проверка правильности выбранной буквы.
                 for (int j = 0; j < word.Length; j++)
                     {
-                
+
                     //Считывание буквы с нажатой кнопки и сравнение е с буквами слова.
-                    if (ActiveControl.Text.Equals( word[j].ToString()))
+                    if (ActiveControl.Text.Equals(word[j].ToString()))
                         {
                         // Если бува в слове есть выодим ее в нужном месте.
                         this.Controls["label" + (j + 1).ToString()].Text = word[j].ToString();
                         n++;
                         }
-                    else 
+                    else
                         {
-                       q++ ;
-                         
+                        q++;
+
                         }
 
                     }
                 // Изменяем картику виселицы если буква не была угадана и увеличиваем счетчик неугаданных букв на 1.
-                if (q== word.Length) 
+                if (q == word.Length)
                     {
                     k++;
                     pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\" + k + ".jpg");
@@ -90,13 +78,13 @@ namespace ViselnikGame
                     this.Hide();
                     f6.Show();
                     }
-               
+
                 // Если количество угаданных букв равно количеству букв в слове переходим к следующему слову.
                 if (n == word.Length)
                     {
                     i++;
                     // если слова закончились выводим форму для победы.
-                    if (i == food.Length)
+                    if (i == animals.Length)
                         {
                         Form8 f8 = new Form8();
                         this.Hide();
@@ -106,13 +94,12 @@ namespace ViselnikGame
                     // Возвращаем картинку виселицы в начальное состояние.
                     pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
                     k = 0;
-                    for (int y = 1; y <= food[i].Length; y++)
+                    for (int y = 1; y <= animals[i].Length; y++)
                         {
                         // Выводим пустые строки равные количеству букв в следующем слове.
                         this.Controls["label" + (y).ToString()].Text = "_";
                         }
-
-                    for (int y = food[i].Length + 1; y <= 10; y++) 
+                    for (int y = animals[i].Length + 1; y <= 10; y++)
                         {
                         this.Controls["label" + (y).ToString()].Text = " ";
                         }
@@ -137,5 +124,3 @@ namespace ViselnikGame
             }
         }
     }
-        
-    

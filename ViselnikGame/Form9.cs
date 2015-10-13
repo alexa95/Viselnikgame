@@ -10,27 +10,16 @@ using System.Windows.Forms;
 
 namespace ViselnikGame
     {
-    public partial class Form4 : Form
+    public partial class Form9 : Form
         {
-
-
-
-        public Form4()
+        public Form9()
             {
             InitializeComponent();
-          
             }
 
+        
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-
-
-        string[] food = { "SOUS", "PIPE", "SOUP", "POTATO" };
+        string[] transport = { "TRAM", "BUS", "MOTOBIKE", "CAR", "BIKE" };
         int i = 0, n = 0, k = 0;
         private void button_clic(object sender, EventArgs e)
         {
@@ -53,11 +42,11 @@ namespace ViselnikGame
             {
 
             // Выбор слова. 
-            for (; i < food.Length; )
+            for (; i < transport.Length; )
                 {
                
                 //  Запись  слова в виде массива символов.
-                char[] word = food[i].ToCharArray();
+                char[] word = transport[i].ToCharArray();
                 int q = 0;
                 // Проверка правильности выбранной буквы.
                 for (int j = 0; j < word.Length; j++)
@@ -96,7 +85,7 @@ namespace ViselnikGame
                     {
                     i++;
                     // если слова закончились выводим форму для победы.
-                    if (i == food.Length)
+                    if (i == transport.Length)
                         {
                         Form8 f8 = new Form8();
                         this.Hide();
@@ -106,13 +95,12 @@ namespace ViselnikGame
                     // Возвращаем картинку виселицы в начальное состояние.
                     pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
                     k = 0;
-                    for (int y = 1; y <= food[i].Length; y++)
+                    for (int y = 1; y <= transport[i].Length; y++)
                         {
                         // Выводим пустые строки равные количеству букв в следующем слове.
                         this.Controls["label" + (y).ToString()].Text = "_";
                         }
-
-                    for (int y = food[i].Length + 1; y <= 10; y++) 
+                    for (int y = transport[i].Length + 1; y <= 10; y++)
                         {
                         this.Controls["label" + (y).ToString()].Text = " ";
                         }
