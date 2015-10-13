@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// TODO: Закоммитить последние изменения
-// TODO: Написать комментарии по коду
 namespace ViselnikGame
 {
     public partial class Form1 : Form
@@ -20,8 +18,9 @@ namespace ViselnikGame
  
         }
       private  void newForm() {
-         
-
+          //Закрытие видео.
+          axWindowsMediaPlayer1.close();
+          //Переход на следующую форму.
           Form2 f2 = new Form2();
           this.Hide();
           f2.Show();
