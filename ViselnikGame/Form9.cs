@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ViselnikGame
     {
@@ -25,7 +26,8 @@ namespace ViselnikGame
         {
             // При нажатии на кнопку меняем её цвет.
        ActiveControl.BackColor = Color.Red;
-        game();    
+        game();
+        
         }
 
         void button_color() 
@@ -37,7 +39,7 @@ namespace ViselnikGame
                 }
             }
     
-  
+    char[] word;
         void game()
             {
 
@@ -46,7 +48,7 @@ namespace ViselnikGame
                 {
                
                 //  Запись  слова в виде массива символов.
-                char[] word = transport[i].ToCharArray();
+                word = transport[i].ToCharArray();
                 int q = 0;
                 // Проверка правильности выбранной буквы.
                 for (int j = 0; j < word.Length; j++)
@@ -57,7 +59,8 @@ namespace ViselnikGame
                         {
                         // Если бува в слове есть выодим ее в нужном месте.
                         this.Controls["label" + (j + 1).ToString()].Text = word[j].ToString();
-                        n++;
+                        n++;   
+                      
                         }
                     else 
                         {
@@ -75,53 +78,69 @@ namespace ViselnikGame
                 // Если количество неугаданных букв равно количеству букв в слове выводим форму для проигрыша.
                 if (k == 7)
                     {
+                    Thread.Sleep(100);
                     Form6 f6 = new Form6();
                     this.Hide();
                     f6.Show();
                     }
-               
-                // Если количество угаданных букв равно количеству букв в слове переходим к следующему слову.
                 if (n == word.Length)
-                    {
-                    i++;
-                    // если слова закончились выводим форму для победы.
-                    if (i == transport.Length)
-                        {
-                        Form8 f8 = new Form8();
-                        this.Hide();
-                        f8.Show();
-                        break;
-                        }
-                    // Возвращаем картинку виселицы в начальное состояние.
-                    pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
-                    k = 0;
-                    for (int y = 1; y <= transport[i].Length; y++)
-                        {
-                        // Выводим пустые строки равные количеству букв в следующем слове.
-                        this.Controls["label" + (y).ToString()].Text = "_";
-                        }
-                    for (int y = transport[i].Length + 1; y <= 10; y++)
-                        {
-                        this.Controls["label" + (y).ToString()].Text = " ";
-                        }
-
-                    button_color();
-                    n = 0;
+                {
+                    button28.Visible=true;
+                    
+                }
+           
                     break;
-                    }
-                else
-                    {
-                    break;
-                    }
+                    
+              
                 }
             }
 
+        void transition()
+            {
+            // Если количество угаданных букв равно количеству букв в слове переходим к следующему слову.
+           
+               
+                i++;
+
+                // если слова закончились выводим форму для победы.
+                if (i == transport.Length)
+                    {
+                    Form8 f8 = new Form8();
+                    this.Hide();
+                    f8.Show();
+                    }
+
+                // Возвращаем картинку виселицы в начальное состояние.
+
+                pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
+                k = 0;
+                for (int y = 1; y <= transport[i].Length; y++)
+                    {
+                    // Выводим пустые строки равные количеству букв в следующем слове.
+                    this.Controls["label" + (y).ToString()].Text = "_";
+                    }
+                for (int y = transport[i].Length + 1; y <= 10; y++)
+                    {
+                    this.Controls["label" + (y).ToString()].Text = " ";
+                    }
+
+                button_color();
+                n = 0;
+                
+            }
         private void button1_Click(object sender, EventArgs e)
             {
             // Переход на форму назад.
             Form3 f3 = new Form3();
             this.Close();
             f3.Show();
+            }
+
+        private void button28_Click(object sender, EventArgs e)
+            {
+            transition();
+            button28.Visible = false;
+          
             }
         }
     }

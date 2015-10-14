@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
 namespace ViselnikGame
     {
     public partial class Form10 : Form
@@ -16,9 +16,7 @@ namespace ViselnikGame
             {
             InitializeComponent();
             }
-
-
-        string[] animals = { "HARE", "DOG", "WOLF", "COW", "CAT" };
+        string[] animals = { "DOG","CAT", "RABBIT", "GIRAFE", "MOUSE" };
         int i = 0, n = 0, k = 0;
         private void button_clic(object sender, EventArgs e)
             {
@@ -74,6 +72,7 @@ namespace ViselnikGame
                 // Если количество неугаданных букв равно количеству букв в слове выводим форму для проигрыша.
                 if (k == 7)
                     {
+                    Thread.Sleep(100);
                     Form6 f6 = new Form6();
                     this.Hide();
                     f6.Show();
@@ -82,37 +81,50 @@ namespace ViselnikGame
                 // Если количество угаданных букв равно количеству букв в слове переходим к следующему слову.
                 if (n == word.Length)
                     {
-                    i++;
-                    // если слова закончились выводим форму для победы.
-                    if (i == animals.Length)
-                        {
-                        Form8 f8 = new Form8();
-                        this.Hide();
-                        f8.Show();
-                        break;
-                        }
-                    // Возвращаем картинку виселицы в начальное состояние.
-                    pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
-                    k = 0;
-                    for (int y = 1; y <= animals[i].Length; y++)
-                        {
-                        // Выводим пустые строки равные количеству букв в следующем слове.
-                        this.Controls["label" + (y).ToString()].Text = "_";
-                        }
-                    for (int y = animals[i].Length + 1; y <= 10; y++)
-                        {
-                        this.Controls["label" + (y).ToString()].Text = " ";
-                        }
+                    button28.Visible = true;
 
-                    button_color();
-                    n = 0;
-                    break;
                     }
-                else
-                    {
-                    break;
-                    }
+
+                break;
+
                 }
+            }
+
+        void transition()
+            {
+
+            i++;
+            // если слова закончились выводим форму для победы.
+            if (i == animals.Length)
+                {
+            
+                Form8 f8 = new Form8();
+                this.Hide();
+                f8.Show();
+
+                }
+            // Возвращаем картинку виселицы в начальное состояние.
+            pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
+            k = 0;
+            for (int y = 1; y <= animals[i].Length; y++)
+                {
+                // Выводим пустые строки равные количеству букв в следующем слове.
+                this.Controls["label" + (y).ToString()].Text = "_";
+                }
+
+            for (int y = animals[i].Length + 1; y <= 10; y++)
+                {
+                this.Controls["label" + (y).ToString()].Text = " ";
+                }
+
+            button_color();
+            n = 0;
+            }
+        private void button28_Click(object sender, EventArgs e)
+            {
+            transition();
+            button28.Visible = false;
+
             }
 
         private void button1_Click(object sender, EventArgs e)
@@ -122,5 +134,8 @@ namespace ViselnikGame
             this.Close();
             f3.Show();
             }
+
+
+     
         }
     }
