@@ -97,6 +97,7 @@ namespace ViselnikGame
                     button28.Visible = true;
                   
                     }
+
               
                     break;
                     
@@ -109,12 +110,7 @@ namespace ViselnikGame
         i++;
         // если слова закончились выводим форму для победы.
         if (i == food.Length)
-            {
-            Form8 f8 = new Form8();
-            this.Hide();
-            f8.Show();
-            
-            }
+          
         // Возвращаем картинку виселицы в начальное состояние.
         pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
         k = 0;
