@@ -30,7 +30,7 @@ namespace ViselnikGame
 
 
 
-        string[] food = { "SOUS", "PIPE", "SOUP", "POTATO" };
+        string[] food = { "SOUP", "APPLE", "PORIGE", "BANAN","CHICKEN" };
         int i = 0, n = 0, k = 0;
         private void button_clic(object sender, EventArgs e)
         {
