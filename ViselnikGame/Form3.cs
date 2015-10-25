@@ -17,27 +17,32 @@ namespace ViselnikGame
             InitializeComponent();
             
         }
+      public  string d;
 
-        private void food(object sender, EventArgs e)
+
+
+      private void categories(object sender, EventArgs e)
             {
+            d = ActiveControl.Text;
+            if (d == "ANIMALS") 
+                {
+                Game.words = Game.animals;
+                }
+            if (d == "FOOD") 
+                {
+                Game.words = Game.food;
+                }
+            if (d == "TRANSPORT") 
+                {
+                Game.words = Game.transport;
+                }
             Form4 f4 = new Form4();
+            CallBackMy.callbackEventHandler(d);
             this.Hide();
-
             f4.Show();
-            }
 
-        private void animals(object sender, EventArgs e) 
-            {
-            Form10 f10 = new Form10();
-            this.Hide();
-            f10.Show();
             }
-        private void transport(object sender, EventArgs e) 
-            {
-            Form9 f9 = new Form9();
-            this.Hide();
-            f9.Show();
-            }
+       
        
         private void button4_Click(object sender, EventArgs e)
         {
@@ -46,20 +51,11 @@ namespace ViselnikGame
             f2.Show();
         }
 
-        private void form4()
-            {
-
-            }
-
-        private void transport()
-            {
-
-            }
-
-        private void animals()
-            {
-
-            }
+      public string button_text
+      { 
+      get{return  d;}  
+      }
+        
 
        
     }

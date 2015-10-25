@@ -6,12 +6,23 @@ using System.Windows.Forms;
 
 namespace ViselnikGame
 {
+    
+    public static class CallBackMy
+            {
+            public delegate void callbackEvent(string what);
+            public static callbackEvent callbackEventHandler;
+            }
+
+    
+
     static class Program
-    {
+    { 
+       
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
-        [STAThread]
+        [STAThread] 
+       
         static void Main()
         {
             Application.EnableVisualStyles();
@@ -19,6 +30,8 @@ namespace ViselnikGame
             Application.Run(new Form2());
            
                    }
+
+       
                }
         }
     

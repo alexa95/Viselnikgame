@@ -44,7 +44,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "FOOD";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.food);
+            this.button1.Click += new System.EventHandler(this.categories);
             // 
             // button2
             // 
@@ -55,7 +55,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "TRANSPORT";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.transport);
+            this.button2.Click += new System.EventHandler(this.categories);
             // 
             // button3
             // 
@@ -66,7 +66,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "ANIMALS";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.animals);
+            this.button3.Click += new System.EventHandler(this.categories);
             // 
             // label1
             // 
