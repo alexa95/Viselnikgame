@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ViselnikGame
     {
     
-    class Game
+    public class Game
         {
         // Создаем массивы слов.
         public static string[] food = { "SOUP", "APPLE", "PORIGE", "BANAN", "CHICKEN" };
@@ -24,17 +24,17 @@ namespace ViselnikGame
         // Создаем массив символов в который будет записываться слово.
         static char[] word; 
         // Создаем массив который будем выводить после проверки буквы.
-        public char[] conclusion=new char[(words[right_words].Length)];
+        public char[] conclusion = "--".ToCharArray();
         // Функция записывающая слово в массив символов.
-        public void filiing_word() 
+        public void Filiing_word() 
             {
             word = words[right_words].ToCharArray();
             }
       // Функция присваиваюшая длине выводимого массива длину слова и  заполняющего выводимый массив знаком "-".
         int count = 0;
-        public void filling_conclusion()
+        public void Filling_conclusion()
             {
-            filiing_word();
+            Filiing_word();
             conclusion = new char[word.Length];
             foreach (char el in conclusion)
                 {
@@ -45,7 +45,7 @@ namespace ViselnikGame
             }
        
         // Функция описывающая игровой процесс.
-             void game()
+             void Logic()
             {
               // Прошлое количество угаданных слов приравнивает к текущему количеству угаданных слов. 
             last_number = win;
@@ -83,10 +83,10 @@ namespace ViselnikGame
             
             } 
         // Публичная функция  программы используется в формах.
-        public void start_game()
+        public void Start()
             {
-            filiing_word();
-            game();
+            Filiing_word();
+            Logic();
 
             }
         }

@@ -22,7 +22,7 @@ namespace ViselnikGame
             // Получаем название категории от кнопки из Form3.
             CallBackMy.callbackEventHandler = new CallBackMy.callbackEvent(this.Reload);
             // Указываем сколько букв в слове.
-            g.filling_conclusion();
+            g.Filling_conclusion();
             InitializeComponent();
             int count = 0;
             foreach (char el in g.conclusion)
@@ -62,7 +62,7 @@ namespace ViselnikGame
            // Предаем букву в сласс Game.
              g.letter = Convert.ToChar(z);
            // Запускаем проверку буквы.
-            g.start_game();
+            g.Start();
             Conc = g.conclusion;
             // Выводим букву ели была нажата правильная.
              foreach (char el in Conc)
@@ -133,8 +133,8 @@ namespace ViselnikGame
         private void button28_Click(object sender, EventArgs e)
             {
             button28.Visible = false;
-            g.filiing_word();
-            g.filling_conclusion();
+            g.Filiing_word();
+            g.Filling_conclusion();
             int count = 0;
             // Указываем сколько букв в следующем слове
             foreach (char el in g.conclusion)
