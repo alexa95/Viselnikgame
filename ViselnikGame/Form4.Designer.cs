@@ -69,12 +69,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button28 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(42, 366);
+            this.button1.Location = new System.Drawing.Point(35, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 30);
             this.button1.TabIndex = 3;
@@ -526,12 +527,24 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(203, 366);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(160, 30);
+            this.button28.TabIndex = 85;
+            this.button28.Text = "NEXT WORD";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Visible = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(657, 408);
+            this.Controls.Add(this.button28);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button22);
@@ -623,5 +636,6 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button28;
     }
 }
