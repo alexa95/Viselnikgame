@@ -23,7 +23,8 @@ namespace ViselnikGame
 
       private void categories(object sender, EventArgs e)
             {
-            d = ActiveControl.Text;
+            d = ActiveControl.Text; 
+          
             if (d == "ANIMALS") 
                 {
                 Game.words = Game.animals;
@@ -36,10 +37,14 @@ namespace ViselnikGame
                 {
                 Game.words = Game.transport;
                 }
-            Form4 f4 = new Form4();
-            CallBackMy.callbackEventHandler(d);
+          
+           
+         
+          
+          Form9 frm9 = new Form9();
+          frm9.categories = d;
             this.Hide();
-            f4.Show();
+            frm9.Show();
 
             }
        

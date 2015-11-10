@@ -21,6 +21,7 @@ namespace ViselnikGame
 
             // Получаем название категории от кнопки из Form3.
             CallBackMy.callbackEventHandler = new CallBackMy.callbackEvent(this.Reload);
+            CallBackMy2.callbackEventHandler2 = new CallBackMy2.callbackEvent2(this.Relod2);
             // Указываем сколько букв в слове.
             g.Filling_conclusion();
             InitializeComponent();
@@ -31,14 +32,18 @@ namespace ViselnikGame
                 count++;
                 }
            }
-       
+
+        int complexity;
         void Reload(string param)
             {
             label12.Text = param;
             }
 
-
-
+        void Relod2(int param2) 
+            {
+            complexity = param2;
+            }
+        int error_count=0;
         /// <summary>
         /// 
         /// </summary>
@@ -73,7 +78,6 @@ namespace ViselnikGame
             // Выводим кнопку перехода на следуюшее слово.
             if (g.win> g.last_number) 
                 {  
-                button_color();
                 button28.Visible = true;
                 }
             //Выводим каринку висельницы если была нажта неверная буква.
@@ -88,27 +92,71 @@ namespace ViselnikGame
                 g.wrong_letters = 0;
                 Game.right_words = 0;
                 }
-            // Если угадано больше половины слов то вывдим форму для победы.
-            if (g.wrong_letters == 7 && g.win >= 3) 
-                {
-                Form8 f8 = new Form8();
-                this.Hide();
-                f8.Show();
-                g.win = 0;
-                g.wrong_letters = 0;
-                Game.right_words = 0;
-                }
-            // Если угадано меньше половины слов то выводим форму для проигрыша.
 
-            if (g.wrong_letters == 7 && g.win < 3)
+            if (g.wrong_letters == 7)
                 {
-                Form6 f6 = new Form6();
-                this.Hide();
-                f6.Show();
-                g.win = 0;
+                count = 0;
+                error_count++;
                 g.wrong_letters = 0;
-                Game.right_words = 0;
+                
+                if (Convert.ToInt32(complexity) == 1 && error_count <= 4)
+                    {
+
+                    g.conclusion = Game.words[Game.right_words].ToCharArray();
+                    Conc = g.conclusion;
+
+                    // Выводим букву ели была нажата правильная.
+                    foreach (char el in Conc)
+                        {
+                        this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
+                        count++;
+                        }
+                    Game.right_words++;
+                    g.win++;
+                    for (int i = 2; i < 28; i++)
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
+                    button28.Visible = true;
+                    }
+
+                if (Convert.ToInt32(complexity) == 2 && error_count <= 2)
+                    {
+                    g.conclusion = Game.words[Game.right_words].ToCharArray();
+                    Conc = g.conclusion;
+
+                    // Выводим букву ели была нажата правильная.
+                    foreach (char el in Conc)
+                        {
+                        this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
+                        count++;
+                        }
+                    Game.right_words++;
+                    g.win++;
+                    for (int i = 2; i < 28; i++)  
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
+                    button1.Enabled = true;
+                        button28.Visible = true;
+                    
+                    }
+
+                if (Convert.ToInt32(complexity) == 2 && error_count > 2 || Convert.ToInt32(complexity) == 1 && error_count > 4 || Convert.ToInt32(complexity) == 3)
+                    {
+                    Form6 f6 = new Form6();
+                    this.Hide();
+                    f6.Show();
+                    g.win = 0;
+                    g.wrong_letters = 0;
+                    Game.right_words = 0;
+                    for (int i = 2; i < 28; i++)
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
+                    }
                 }
+            ActiveControl.Enabled= false;
         
 
         }
@@ -125,6 +173,7 @@ namespace ViselnikGame
             for (int d = 2; d < 28; d++)
                 {
                 this.Controls["button" + (d).ToString()].BackColor = Color.Silver;
+                this.Controls["button" + (d).ToString()].Enabled = true;
                 }
             }
     
@@ -148,6 +197,7 @@ namespace ViselnikGame
                 }
             //Возвращаем картинку в начальное положение
             pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.jpg");
+            button_color();
             
             }
 
@@ -158,6 +208,8 @@ namespace ViselnikGame
             this.Close();
             f3.Show();
             }
+
+        
 
 
         

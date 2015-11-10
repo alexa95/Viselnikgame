@@ -13,6 +13,12 @@ namespace ViselnikGame
             public static callbackEvent callbackEventHandler;
             }
 
+
+    public static class CallBackMy2
+        {
+        public delegate void callbackEvent2(int what);
+        public static callbackEvent2 callbackEventHandler2;
+        }
     
 
     static class Program

@@ -20,7 +20,7 @@ namespace ViselnikGame
         public static int right_words = 0, correct_letters = 0;
         public int wrong_letters = 0, win = 0, last_number = 0;
         // Создаем масив в который будет записываться массив выбраной категории.
-        public static string[] words;
+        public static string[] words={""};
         // Создаем массив символов в который будет записываться слово.
         static char[] word; 
         // Создаем массив который будем выводить после проверки буквы.
@@ -62,15 +62,14 @@ namespace ViselnikGame
                     }
                 else
                     {
-                    
-                    q++;
+                    q = q + 1; ;
                     }
                 count_word++;
                 }
                  // Если буква не была обнаружена в слове увеличиваем счетчик неверных букв на единицу.
             if (q == word.Length) 
                 {
-                wrong_letters++;
+                wrong_letters = wrong_letters + 1; ;
                 }
                  // Если счетчик правильных букв равен длине слова то увеличиваем счетчики правильных слов на единицу переходим на след слово и обнуляем счетчки правильных и неправильных букв.
             if (correct_letters == word.Length) 
@@ -79,6 +78,7 @@ namespace ViselnikGame
                 right_words++;
                 wrong_letters = 0;
                 correct_letters = 0;
+
                 }
             
             } 
