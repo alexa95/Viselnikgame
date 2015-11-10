@@ -117,6 +117,7 @@ namespace ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
+
                     button28.Visible = true;
                     }
 
@@ -137,7 +138,7 @@ namespace ViselnikGame
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-                    button1.Enabled = true;
+                 
                         button28.Visible = true;
                     
                     }
@@ -157,12 +158,12 @@ namespace ViselnikGame
                     }
                 }
             ActiveControl.Enabled= false;
-        
 
+            button1.Enabled = true;
         }
 
        
-             
+               
             
             
        
@@ -203,6 +204,11 @@ namespace ViselnikGame
 
         private void button1_Click(object sender, EventArgs e)
             {
+
+            Game.right_words = 0;
+            g.last_number = 0;
+            g.wrong_letters = 0;
+            Game.correct_letters = 0;
             // Переход на форму назад.
             Form3 f3 = new Form3();
             this.Close();
