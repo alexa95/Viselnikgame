@@ -173,7 +173,7 @@ namespace ViselnikGame
             //Изменение цвета кнопок на начальный.
             for (int d = 2; d < 28; d++)
                 {
-                this.Controls["button" + (d).ToString()].BackColor = Color.Silver;
+                this.Controls["button" + (d).ToString()].BackColor = Color.Transparent;
                 this.Controls["button" + (d).ToString()].Enabled = true;
                 }
             }
@@ -214,6 +214,10 @@ namespace ViselnikGame
             this.Close();
             f3.Show();
             }
+
+
+      
+
 
         
 

@@ -122,8 +122,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Form4.datasource" />
     <None Include="Properties\DataSources\ViselnikGame.Properties.Resources.datasource" />
@@ -165,49 +165,27 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\apple_texturпапаe_pack_4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\кнопка старт .jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\фон .jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\кнопка старт 1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\кнопка справки2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\кнопка выхода .jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resources\0.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ffjg.jpg" />
+    <Content Include="Resources\6.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\4.jpg" />
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\2.jpg" />
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\7.jpg" />
+    <None Include="Resources\background2.jpg" />
+    <None Include="Resources\button-transport.jpg" />
+    <None Include="Resources\button-food.jpg" />
+    <None Include="Resources\button-animals.jpg" />
+    <None Include="Resources\example window 3  help.jpg" />
+    <None Include="Resources\example window 2.jpg" />
+    <None Include="Resources\button-back.jpg" />
+    <None Include="Resources\example window-video .jpg" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\button-start.jpg" />
+    <None Include="Resources\button-help.jpg" />
+    <None Include="Resources\button-exit.jpg" />
+    <None Include="Resources\example window .jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
