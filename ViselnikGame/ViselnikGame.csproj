@@ -173,6 +173,7 @@
     <Content Include="Resources\2.jpg" />
     <Content Include="Resources\1.jpg" />
     <Content Include="Resources\7.jpg" />
+    <None Include="Resources\Gf60xc4hVzU.jpg" />
     <None Include="Resources\background2.jpg" />
     <None Include="Resources\button-transport.jpg" />
     <None Include="Resources\button-food.jpg" />
