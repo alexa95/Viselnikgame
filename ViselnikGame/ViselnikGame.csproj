@@ -165,7 +165,7 @@
     <Content Include="Resources\3.jpg" />
     <Content Include="Resources\2.jpg" />
     <Content Include="Resources\1.jpg" />
-    <None Include="Resources\6.png" />
+    <Content Include="Resources\6.jpg" />
     <Content Include="Resources\7.jpg" />
     <None Include="Resources\Gf60xc4hVzU.jpg" />
     <None Include="Resources\background2.jpg" />
