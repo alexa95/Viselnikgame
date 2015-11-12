@@ -122,7 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Form4.datasource" />
@@ -131,11 +130,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -166,12 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\0.jpg" />
-    <Content Include="Resources\6.jpg" />
     <Content Include="Resources\5.jpg" />
     <Content Include="Resources\4.jpg" />
     <Content Include="Resources\3.jpg" />
     <Content Include="Resources\2.jpg" />
     <Content Include="Resources\1.jpg" />
+    <None Include="Resources\6.png" />
     <Content Include="Resources\7.jpg" />
     <None Include="Resources\Gf60xc4hVzU.jpg" />
     <None Include="Resources\background2.jpg" />
