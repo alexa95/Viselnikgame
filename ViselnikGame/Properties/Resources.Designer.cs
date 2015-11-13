@@ -63,9 +63,49 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background2 {
+            get {
+                object obj = ResourceManager.GetObject("background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_animals {
+            get {
+                object obj = ResourceManager.GetObject("button-animals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_back {
             get {
                 object obj = ResourceManager.GetObject("button-back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_food {
+            get {
+                object obj = ResourceManager.GetObject("button-food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_transport {
+            get {
+                object obj = ResourceManager.GetObject("button-transport", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
