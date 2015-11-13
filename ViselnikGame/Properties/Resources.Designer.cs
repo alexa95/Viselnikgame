@@ -163,6 +163,16 @@ namespace ViselnikGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap example_window_video_1 {
+            get {
+                object obj = ResourceManager.GetObject("example window-video 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gf60xc4hVzU {
             get {
                 object obj = ResourceManager.GetObject("Gf60xc4hVzU", resourceCulture);
