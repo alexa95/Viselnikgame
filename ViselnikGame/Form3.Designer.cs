@@ -37,7 +37,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.button_food;
+            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonFood;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(554, 459);
@@ -51,7 +51,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.BackgroundImage = global::ViselnikGame.Properties.Resources.button_transport;
+            this.button2.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonTransport;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(554, 561);
@@ -65,7 +65,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.button_animals;
+            this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonAnimals;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.Maroon;
@@ -80,7 +80,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.button_back;
+            this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Location = new System.Drawing.Point(554, 663);
             this.button4.Name = "button4";

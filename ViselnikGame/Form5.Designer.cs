@@ -33,7 +33,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.button_back;
+            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(12, 676);
             this.button1.Name = "button1";

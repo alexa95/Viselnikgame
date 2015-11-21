@@ -10,9 +10,9 @@ namespace UnitTestProject1
         public void Entering_letters()
             {
             Game g = new Game();
-            Game.words = Game.food; 
+            Game.words = Game.Food;
             g.Filling_conclusion();
-            g.letter = 'S';
+            g.Letter = 'S';
             g.Start();
             Assert.AreEqual(g.conclusion.ToString(), "S---".ToCharArray().ToString());
             }

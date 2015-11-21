@@ -13,10 +13,11 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && (this.components != null))
             {
-                components.Dispose();
+                this.components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -39,7 +40,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.button_exit;
+            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonExit;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(535, 624);
             this.button1.MaximumSize = new System.Drawing.Size(310, 73);
@@ -56,7 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.button_help;
+            this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonHelp;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(535, 522);
             this.button3.MaximumSize = new System.Drawing.Size(310, 73);
@@ -73,7 +74,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.button_start;
+            this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonStart;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(535, 417);
             this.button4.MaximumSize = new System.Drawing.Size(310, 73);

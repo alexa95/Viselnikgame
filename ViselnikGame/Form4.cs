@@ -1,118 +1,153 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Threading;
-namespace ViselnikGame
+﻿namespace ViselnikGame
     {
-    public   partial class Form4 : Form
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Drawing;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+    using System.Threading;
+
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
+    public partial class Form4 : Form
         {
+        /// <summary>
+        /// Copy of class Game.
+        /// </summary>
+        Game g = new Game();
 
-
- Game   g = new Game();
-
+        /// <summary>
+        ///  Form start.
+        /// </summary>
         public Form4()
             {
+            //receive the name of a category from the button from Form3.
+            CallBackMy.CallBackEventHandler = new CallBackMy.CallBackEvent(this.Reload);
 
-            // Получаем название категории от кнопки из Form3.
-            CallBackMy.callbackEventHandler = new CallBackMy.callbackEvent(this.Reload);
-            CallBackMy2.callbackEventHandler2 = new CallBackMy2.callbackEvent2(this.Relod2);
-            // Указываем сколько букв в слове.
+            //receive value of complexity from Form9.
+            CallBackMy2.CallBackEventHandler2 = new CallBackMy2.CallBackEvent2(this.Relod2);
+
+            //specify how many letters in a word.
             g.Filling_conclusion();
             InitializeComponent();
             int count = 0;
             foreach (char el in g.conclusion)
                 {
-                this.Controls["label"+(count+1).ToString()].Text = g.conclusion[count].ToString();
+                this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
                 count++;
                 }
-           }
+            }
 
+        /// <summary>
+        /// Variable containing complexity.
+        /// </summary>
         int complexity;
+
+        /// <summary>
+        /// Conclusion of the name of a category.
+        /// </summary>
+        /// <param name="param"></param>
         void Reload(string param)
             {
             label12.Text = param;
             }
 
-        void Relod2(int param2) 
+        /// <summary>
+        /// Record of value of complexity.
+        /// </summary>
+        /// <param name="param2"></param>
+        void Relod2(int param2)
             {
             complexity = param2;
             }
-        int error_count=0;
+
         /// <summary>
-        /// 
+        /// create error counter.
+        /// </summary>
+        int ErrorCount = 0;
+
+        /// <summary>
+        /// Line receiving value of a letter.
+        /// </summary>
+        string z;
+
+        /// <summary>
+        /// Line showing what letters are guessed and how many all letters in a word.
+        /// </summary>
+        char[] Conc = new char[10];
+
+        /// <summary>
+        /// Function starting letter check on correctness.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-
-       string z;
-
-      
-
-
- char[] Conc = new char[10];
         private void button_clic(object sender, EventArgs e)
-        { 
-            // При нажатии на кнопку меняем её цвет.
-       ActiveControl.BackColor = Color.Red;
-            z= ActiveControl.Text;
-           
+            {
+            // By pressing the button its colour is changed.
+            ActiveControl.BackColor = Color.Red;
+
+            //Receive value of a letter
+            z = ActiveControl.Text;
             int count = 0;
-           // Предаем букву в сласс Game.
-             g.letter = Convert.ToChar(z);
-           // Запускаем проверку буквы.
+
+            // We betray a letter in сласс Game.
+            g.Letter = Convert.ToChar(z);
+
+            // We start letter check.
             g.Start();
             Conc = g.conclusion;
-            // Выводим букву ели была нажата правильная.
-             foreach (char el in Conc)
+
+            // We remove a fur-tree letter the correct has been pressed.
+            foreach (char el in Conc)
                 {
-                this.Controls["label" + (count+1).ToString()].Text = Conc[count].ToString();
+                this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
                 count++;
                 }
-            // Выводим кнопку перехода на следуюшее слово.
-            if (g.win> g.last_number) 
-                {  
+
+            // We remove the transition button on следуюшее a word.
+            if (g.WinCounter > g.LastNumberCounter)
+                {
                 button28.Visible = true;
                 }
-            //Выводим каринку висельницы если была нажта неверная буква.
-            pictureBox1.Image = Image.FromFile(@"Resources\" + g.wrong_letters+".jpg");
-            // Если все слова были угаданы то выводим форму для победы.
-            if (g.win == Game.words.Length) 
+
+            //We remove a gallows picture if there was нажта an incorrect letter.
+            pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+
+            // If all words have been guessed that we remove the form for a victory.
+            if (g.WinCounter == Game.words.Length)
                 {
                 Form8 f8 = new Form8();
                 this.Hide();
                 f8.Show();
-                g.win = 0;
-                g.wrong_letters = 0;
-                Game.right_words = 0;
+                g.WinCounter = 0;
+                g.WrongLettersCounter = 0;
+                Game.RightWordsCounter = 0;
                 }
 
-            if (g.wrong_letters == 7)
+            if (g.WrongLettersCounter == 7)
                 {
                 count = 0;
-                error_count++;
-                g.wrong_letters = 0;
-                
-                if (Convert.ToInt32(complexity) == 1 && error_count <= 4)
+                ErrorCount++;
+                g.WrongLettersCounter = 0;
+                if (Convert.ToInt32(complexity) == 1 && ErrorCount <= 4)
                     {
-
-                    g.conclusion = Game.words[Game.right_words].ToCharArray();
+                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     Conc = g.conclusion;
 
-                    // Выводим букву ели была нажата правильная.
+                    // We remove a fur-tree letter the correct has been pressed.
                     foreach (char el in Conc)
                         {
                         this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
                         count++;
                         }
-                    Game.right_words++;
-                    g.win++;
+
+                    Game.RightWordsCounter++;
+                    g.WinCounter++;
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
@@ -121,109 +156,106 @@ namespace ViselnikGame
                     button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && error_count <= 2)
+                if (Convert.ToInt32(complexity) == 2 && ErrorCount <= 2)
                     {
-                    g.conclusion = Game.words[Game.right_words].ToCharArray();
+                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     Conc = g.conclusion;
 
-                    // Выводим букву ели была нажата правильная.
+                    // We remove a fur-tree letter the correct has been pressed.
                     foreach (char el in Conc)
                         {
                         this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
                         count++;
                         }
-                    Game.right_words++;
-                    g.win++;
-                    for (int i = 2; i < 28; i++)  
+
+                    Game.RightWordsCounter++;
+                    g.WinCounter++;
+                    for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
-                 
-                        button28.Visible = true;
-                    
+
+                    button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && error_count > 2 || Convert.ToInt32(complexity) == 1 && error_count > 4 || Convert.ToInt32(complexity) == 3)
+                if (Convert.ToInt32(complexity) == 2 && ErrorCount > 2 || Convert.ToInt32(complexity) == 1 && ErrorCount > 4 || Convert.ToInt32(complexity) == 3)
                     {
                     Form6 f6 = new Form6();
                     this.Hide();
                     f6.Show();
-                    g.win = 0;
-                    g.wrong_letters = 0;
-                    Game.right_words = 0;
+                    g.WinCounter = 0;
+                    g.WrongLettersCounter = 0;
+                    Game.RightWordsCounter = 0;
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
                         }
                     }
                 }
-            ActiveControl.Enabled= false;
 
+            ActiveControl.Enabled = false;
             button1.Enabled = true;
-        }
+            }
 
-       
-               
-            
-            
-       
-    
-        public void button_color() 
+        /// <summary>
+        /// Change of color of buttons on the initial.
+        /// </summary>
+        public void ButtonColor()
             {
-            //Изменение цвета кнопок на начальный.
             for (int d = 2; d < 28; d++)
                 {
                 this.Controls["button" + (d).ToString()].BackColor = Color.Transparent;
                 this.Controls["button" + (d).ToString()].Enabled = true;
                 }
             }
-    
-  
-       
+
+        /// <summary>
+        /// Transition to a following word.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button28_Click(object sender, EventArgs e)
             {
             button28.Visible = false;
             g.Filiing_word();
             g.Filling_conclusion();
             int count = 0;
-            // Указываем сколько букв в следующем слове
+
+            // We specify how many letters in a following word.
             foreach (char el in g.conclusion)
                 {
-                this.Controls["label" +(count+1).ToString()].Text = g.conclusion[count].ToString();
+                this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
                 count++;
                 }
-            for (int i = g.conclusion.Length + 1; i < 11; i++) 
+
+            for (int i = g.conclusion.Length + 1; i < 11; i++)
                 {
                 this.Controls["label" + i.ToString()].Text = "";
                 }
-            //Возвращаем картинку в начальное положение
+
+            //We return a picture in initial position.
             pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
-            button_color();
-            
+            ButtonColor();
             }
 
+        /// <summary>
+        /// Return on the form with a category choice.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
             {
+            Game.RightWordsCounter = 0;
+            g.LastNumberCounter = 0;
+            g.WrongLettersCounter = 0;
+            Game.CorrectLettersCounter = 0;
 
-            Game.right_words = 0;
-            g.last_number = 0;
-            g.wrong_letters = 0;
-            Game.correct_letters = 0;
-            // Переход на форму назад.
+            // Transition to the form back.
             Form3 f3 = new Form3();
             this.Close();
             f3.Show();
             }
-
-
-      
-
-
-        
-
-
-        
         }
     }
-        
-    
+
+
