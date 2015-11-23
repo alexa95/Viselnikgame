@@ -1,151 +1,265 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Threading;
+﻿//<copyright file="Form4.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
 namespace ViselnikGame
     {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Drawing;
+    using System.Linq;
+    using System.Text; 
+    using System.Threading;
+    using System.Threading.Tasks; 
+    using System.Windows.Forms;
+  
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
     public partial class Form4 : Form
         {
-
-
-
-        public Form4()
-            {
-            InitializeComponent();
-          
-            }
-
+        /// <summary>
+        /// Copy of class Game.
+        /// </summary>
+        Game g = new Game();
 
         /// <summary>
-        /// 
+        ///  Form start.
+        /// </summary>
+        public Form4()
+            {
+            //receive the name of a category from the button from Form3.
+            CallBack.CallBackEventHandler = new CallBack.CallBackEvent(this.Reload);
+
+            //receive value of complexity from Form9.
+            CallBack.CallBackEventHandler2 = new CallBack.CallBackEvent2(this.Relod2);
+
+            //specify how many letters in a word.
+            g.Filling_conclusion();
+            InitializeComponent();
+            int count = 0;
+            foreach (char el in g.conclusion)
+                {
+                this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
+                count++;
+                }
+            }
+
+        /// <summary>
+        /// Variable containing complexity.
+        /// </summary>
+        int complexity;
+
+        /// <summary>
+        /// create error counter.
+        /// </summary>
+        int errorCount = 0;
+
+        /// <summary>
+        /// Line receiving value of a letter.
+        /// </summary>
+        string z;
+
+        /// <summary>
+        /// Line showing what letters are guessed and how many all letters in a word.
+        /// </summary>
+        char[] conc = new char[10];
+
+        /// <summary>
+        /// Change of color of buttons on the initial.
+        /// </summary>
+        public void ButtonColor()
+            {
+            for (int d = 2; d < 28; d++)
+                {
+                this.Controls["button" + (d).ToString()].BackColor = Color.Transparent;
+                this.Controls["button" + (d).ToString()].Enabled = true;
+                }
+            }
+
+        /// <summary>
+        /// Function starting letter check on correctness.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-
-
-        string[] food = { "SOUP", "APPLE", "PORIGE", "BANAN","CHICKEN" };
-        int i = 0, n = 0, k = 0;
-        private void button_clic(object sender, EventArgs e)
-        {
-            // При нажатии на кнопку меняем её цвет.
-       ActiveControl.BackColor = Color.Red;
-        game();    
-        }
-
-        void button_color() 
+        private void ButtonClic(object sender, EventArgs e)
             {
-            //Изменение цвета кнопок на начальный.
-            for (int d = 2; d < 28; d++)
+            // By pressing the button its colour is changed.
+            ActiveControl.BackColor = Color.Red;
+
+            //Receive value of a letter
+            z = ActiveControl.Text;
+            int count = 0;
+
+            // We betray a letter in сласс Game.
+            g.Letter = Convert.ToChar(z);
+
+            // We start letter check.
+            g.Start();
+            conc = g.conclusion;
+
+            // We remove a fur-tree letter the correct has been pressed.
+            foreach (char el in conc)
                 {
-                this.Controls["button" + (d).ToString()].BackColor = Color.Silver;
+                this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
+                count++;
                 }
-            }
-    
-  
-        void game()
-            {
 
-            // Выбор слова. 
-            for (; i < food.Length; )
+            // We remove the transition button on следуюшее a word.
+            if (g.WinCounter > g.LastNumberCounter)
                 {
-               
-                //  Запись  слова в виде массива символов.
-                char[] word = food[i].ToCharArray();
-                int q = 0;
-                // Проверка правильности выбранной буквы.
-                for (int j = 0; j < word.Length; j++)
+                button28.Visible = true;
+                }
+
+            //We remove a gallows picture if there was нажта an incorrect letter.
+            pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
+
+            // If all words have been guessed that we remove the form for a victory.
+            if (g.WinCounter == Game.words.Length)
+                {
+                Form8 f8 = new Form8();
+                this.Hide();
+                f8.Show();
+                g.WinCounter = 0;
+                g.WrongLettersCounter = 0;
+                Game.RightWordsCounter = 0;
+                }
+
+            if (g.WrongLettersCounter == 7)
+                {
+                count = 0;
+                errorCount++;
+                g.WrongLettersCounter = 0;
+                if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
-                
-                    //Считывание буквы с нажатой кнопки и сравнение е с буквами слова.
-                    if (ActiveControl.Text.Equals( word[j].ToString()))
+                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
+                    conc = g.conclusion;
+
+                    // We remove a fur-tree letter the correct has been pressed.
+                    foreach (char el in conc)
                         {
-                        // Если бува в слове есть выодим ее в нужном месте.
-                        this.Controls["label" + (j + 1).ToString()].Text = word[j].ToString();
-                        n++;
-                        }
-                    else 
-                        {
-                       q++ ;
-                         
+                        this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
+                        count++;
                         }
 
+                    Game.RightWordsCounter++;
+                    g.WinCounter++;
+                    for (int i = 2; i < 28; i++)
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
+
+                    button28.Visible = true;
                     }
-                // Изменяем картику виселицы если буква не была угадана и увеличиваем счетчик неугаданных букв на 1.
-                if (q== word.Length) 
+
+                if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
-                    k++;
-                    pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\" + k + ".jpg");
+                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
+                    conc = g.conclusion;
+
+                    // We remove a fur-tree letter the correct has been pressed.
+                    foreach (char el in conc)
+                        {
+                        this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
+                        count++;
+                        }
+
+                    Game.RightWordsCounter++;
+                    g.WinCounter++;
+                    for (int i = 2; i < 28; i++)
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
+
+                    button28.Visible = true;
                     }
-                // Если количество неугаданных букв равно количеству букв в слове выводим форму для проигрыша.
-                if (k == 7)
+
+                if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
                     {
                     Form6 f6 = new Form6();
                     this.Hide();
                     f6.Show();
+                    g.WinCounter = 0;
+                    g.WrongLettersCounter = 0;
+                    Game.RightWordsCounter = 0;
+                    for (int i = 2; i < 28; i++)
+                        {
+                        this.Controls["button" + (i).ToString()].Enabled = false;
+                        }
                     }
-               
-                // Если количество угаданных букв равно количеству букв в слове переходим к следующему слову.
-                if (n == word.Length)
-                    {
-                    button28.Visible = true;
-                  
-                    }
-
-              
-                    break;
-                    
                 }
+
+            ActiveControl.Enabled = false;
+            button1.Enabled = true;
             }
 
-        void transition()
-        {
-
-        i++;
-        // если слова закончились выводим форму для победы.
-        if (i == food.Length)
-          
-        // Возвращаем картинку виселицы в начальное состояние.
-        pictureBox1.Image = Image.FromFile(@"C:\Users\uzer33\Documents\GitHub\Viselnikgame\ViselnikGame\Resources\0.bmp");
-        k = 0;
-        for (int y = 1; y <= food[i].Length; y++)
+        /// <summary>
+        /// Transition to a following word.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button28Click(object sender, EventArgs e)
             {
-            // Выводим пустые строки равные количеству букв в следующем слове.
-            this.Controls["label" + (y).ToString()].Text = "_";
-            }
-
-        for (int y = food[i].Length + 1; y <= 10; y++)
-            {
-            this.Controls["label" + (y).ToString()].Text = " ";
-            }
-
-        button_color();
-        n = 0;
-        }
-        private void button28_Click(object sender, EventArgs e)
-            {
-            transition();
             button28.Visible = false;
+            g.Filiing_word();
+            g.Filling_conclusion();
+            int count = 0;
 
+            // We specify how many letters in a following word.
+            foreach (char el in g.conclusion)
+                {
+                this.Controls["label" + (count + 1).ToString()].Text = g.conclusion[count].ToString();
+                count++;
+                }
+
+            for (int i = g.conclusion.Length + 1; i < 11; i++)
+                {
+                this.Controls["label" + i.ToString()].Text = " ";
+                }
+
+            //We return a picture in initial position.
+            pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
+            ButtonColor();
             }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Return on the form with a category choice.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button1Click(object sender, EventArgs e)
             {
-            // Переход на форму назад.
+            Game.RightWordsCounter = 0;
+            g.LastNumberCounter = 0;
+            g.WrongLettersCounter = 0;
+            Game.CorrectLettersCounter = 0;
+
+            // Transition to the form back.
             Form3 f3 = new Form3();
             this.Close();
             f3.Show();
             }
 
+        /// <summary>
+        /// Conclusion of the name of a category.
+        /// </summary>
+        /// <param name="param"></param>
+        void Reload(string param)
+            {
+            label12.Text = param;
+            }
 
-        
+        /// <summary>
+        /// Record of value of complexity.
+        /// </summary>
+        /// <param name="param2"></param>
+        void Relod2(int param2)
+            {
+            complexity = param2;
+            }
         }
     }
-        
-    

@@ -1,5 +1,14 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form6.Designer.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
     partial class Form6
         {
         /// <summary>
@@ -13,10 +22,11 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
             {
-            if (disposing && (components != null))
+            if (disposing && (this.components != null))
                 {
-                components.Dispose();
+                this.components.Dispose();
                 }
+
             base.Dispose(disposing);
             }
 
@@ -35,21 +45,24 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(232, 366);
+            this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(480, 481);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 30);
+            this.button1.Size = new System.Drawing.Size(310, 73);
             this.button1.TabIndex = 0;
-            this.button1.Text = "BACK";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(89, 117);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 99.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(280, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 91);
+            this.label1.Size = new System.Drawing.Size(743, 152);
             this.label1.TabIndex = 1;
             this.label1.Text = "YOU LOSE";
             // 
@@ -58,9 +71,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(657, 408);
+            this.BackgroundImage = global::ViselnikGame.Properties.Resources.exampleWindowVideo;
+            this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form6";
             this.Text = "HANGED MAN";
             this.ResumeLayout(false);
@@ -70,7 +85,14 @@
 
         #endregion
 
+        /// <summary>
+        /// Button back
+        /// </summary>
         private System.Windows.Forms.Button button1;
+
+        /// <summary>
+        /// String lose
+        /// </summary>
         private System.Windows.Forms.Label label1;
         }
     }
