@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form5.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -28,7 +34,7 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1Click(object sender, EventArgs e)
             {
             Form2 f2 = new Form2();
             this.Hide();

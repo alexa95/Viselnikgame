@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Program.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;

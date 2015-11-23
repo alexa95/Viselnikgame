@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="CallBack.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author>  
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -9,7 +15,7 @@
     /// <summary>
     /// This class returns a line with the name of a category from the form with a choice of categories.
     /// </summary>
-    public static class CallBackMy
+    public static class CallBack
         {
         /// <summary>
         ///  Returns a line with the name of a category from the form with a choice of categories.
@@ -21,13 +27,7 @@
         /// Contains returned value
         /// </summary>
         public static CallBackEvent CallBackEventHandler;
-        }
 
-    /// <summary>
-    /// This class returns value of complexity from the form with a complexity choice.
-    /// </summary>
-    public static class CallBackMy2
-        {
         /// <summary>
         /// Returns value of complexity.
         /// </summary>

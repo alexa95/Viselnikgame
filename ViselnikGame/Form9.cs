@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form9.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -26,12 +32,12 @@
         /// <summary>
         /// Variable containing value of complexity.
         /// </summary>
-        public int complexity = 0;
+        public int Complexity = 0;
 
         /// <summary>
         /// Line containing the category name.
         /// </summary>
-        public string categories;
+        public string Categories;
 
         /// <summary>
         /// Copy of class Form4.
@@ -43,11 +49,11 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1Click(object sender, EventArgs e)
             {
-            complexity = 1;
-            CallBackMy2.CallBackEventHandler2(complexity);
-            CallBackMy.CallBackEventHandler(categories);
+            Complexity = 1;
+            CallBack.CallBackEventHandler2(Complexity);
+            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }
@@ -57,11 +63,11 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2Click(object sender, EventArgs e)
             {
-            complexity = 2;
-            CallBackMy2.CallBackEventHandler2(complexity);
-            CallBackMy.CallBackEventHandler(categories);
+            Complexity = 2;
+            CallBack.CallBackEventHandler2(Complexity);
+            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }
@@ -71,11 +77,11 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3Click(object sender, EventArgs e)
             {
-            complexity = 3;
-            CallBackMy2.CallBackEventHandler2(complexity);
-            CallBackMy.CallBackEventHandler(categories);
+            Complexity = 3;
+            CallBack.CallBackEventHandler2(Complexity);
+            CallBack.CallBackEventHandler(Categories);
             this.Hide();
             frm4.Show();
             }

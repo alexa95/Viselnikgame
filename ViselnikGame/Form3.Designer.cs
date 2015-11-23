@@ -1,5 +1,14 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form3.Designer.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
 {
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
     partial class Form3
     {
         /// <summary>
@@ -13,10 +22,11 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && (this.components != null))
             {
-                components.Dispose();
+                this.components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -46,7 +56,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "FOOD";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.categories);
+            this.button1.Click += new System.EventHandler(this.Categories);
             // 
             // button2
             // 
@@ -60,7 +70,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "TRANSPORT";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.categories);
+            this.button2.Click += new System.EventHandler(this.Categories);
             // 
             // button3
             // 
@@ -75,7 +85,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "ANIMALS";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.categories);
+            this.button3.Click += new System.EventHandler(this.Categories);
             // 
             // button4
             // 
@@ -87,7 +97,7 @@
             this.button4.Size = new System.Drawing.Size(310, 73);
             this.button4.TabIndex = 4;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4Click);
             // 
             // Form3
             // 
@@ -109,9 +119,24 @@
 
         #endregion
 
-       public  System.Windows.Forms.Button button1;
-       public System.Windows.Forms.Button button2;
-       public System.Windows.Forms.Button button3;
+        /// <summary>
+        /// Button Food
+        /// </summary>
+        private System.Windows.Forms.Button button1;
+
+        /// <summary>
+        /// Button transport
+        /// </summary>
+       private System.Windows.Forms.Button button2;
+
+        /// <summary>
+        /// Button animals
+        /// </summary>
+       private System.Windows.Forms.Button button3;
+
+        /// <summary>
+        /// Button back
+        /// </summary>
         private System.Windows.Forms.Button button4;
     }
 }

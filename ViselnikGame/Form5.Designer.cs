@@ -1,5 +1,14 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form5.Designer.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
 {
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
     partial class Form5
     {
         /// <summary>
@@ -13,10 +22,11 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && (this.components != null))
             {
-                components.Dispose();
+                this.components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -40,7 +50,7 @@
             this.button1.Size = new System.Drawing.Size(310, 73);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1Click);
             // 
             // Form5
             // 
@@ -59,6 +69,9 @@
 
         #endregion
 
+        /// <summary>
+        /// Button back
+        /// </summary>
         private System.Windows.Forms.Button button1;
     }
 }

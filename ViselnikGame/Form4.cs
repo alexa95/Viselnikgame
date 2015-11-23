@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form4.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -6,11 +12,11 @@
     using System.Data;
     using System.Drawing;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Windows.Forms;
+    using System.Text; 
     using System.Threading;
-
+    using System.Threading.Tasks; 
+    using System.Windows.Forms;
+  
     /// <summary>
     /// Copy of a class of the form.
     /// </summary>
@@ -27,10 +33,10 @@
         public Form4()
             {
             //receive the name of a category from the button from Form3.
-            CallBackMy.CallBackEventHandler = new CallBackMy.CallBackEvent(this.Reload);
+            CallBack.CallBackEventHandler = new CallBack.CallBackEvent(this.Reload);
 
             //receive value of complexity from Form9.
-            CallBackMy2.CallBackEventHandler2 = new CallBackMy2.CallBackEvent2(this.Relod2);
+            CallBack.CallBackEventHandler2 = new CallBack.CallBackEvent2(this.Relod2);
 
             //specify how many letters in a word.
             g.Filling_conclusion();
@@ -49,27 +55,9 @@
         int complexity;
 
         /// <summary>
-        /// Conclusion of the name of a category.
-        /// </summary>
-        /// <param name="param"></param>
-        void Reload(string param)
-            {
-            label12.Text = param;
-            }
-
-        /// <summary>
-        /// Record of value of complexity.
-        /// </summary>
-        /// <param name="param2"></param>
-        void Relod2(int param2)
-            {
-            complexity = param2;
-            }
-
-        /// <summary>
         /// create error counter.
         /// </summary>
-        int ErrorCount = 0;
+        int errorCount = 0;
 
         /// <summary>
         /// Line receiving value of a letter.
@@ -79,14 +67,26 @@
         /// <summary>
         /// Line showing what letters are guessed and how many all letters in a word.
         /// </summary>
-        char[] Conc = new char[10];
+        char[] conc = new char[10];
+
+        /// <summary>
+        /// Change of color of buttons on the initial.
+        /// </summary>
+        public void ButtonColor()
+            {
+            for (int d = 2; d < 28; d++)
+                {
+                this.Controls["button" + (d).ToString()].BackColor = Color.Transparent;
+                this.Controls["button" + (d).ToString()].Enabled = true;
+                }
+            }
 
         /// <summary>
         /// Function starting letter check on correctness.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button_clic(object sender, EventArgs e)
+        private void ButtonClic(object sender, EventArgs e)
             {
             // By pressing the button its colour is changed.
             ActiveControl.BackColor = Color.Red;
@@ -100,12 +100,12 @@
 
             // We start letter check.
             g.Start();
-            Conc = g.conclusion;
+            conc = g.conclusion;
 
             // We remove a fur-tree letter the correct has been pressed.
-            foreach (char el in Conc)
+            foreach (char el in conc)
                 {
-                this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
+                this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
                 count++;
                 }
 
@@ -132,17 +132,17 @@
             if (g.WrongLettersCounter == 7)
                 {
                 count = 0;
-                ErrorCount++;
+                errorCount++;
                 g.WrongLettersCounter = 0;
-                if (Convert.ToInt32(complexity) == 1 && ErrorCount <= 4)
+                if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
-                    Conc = g.conclusion;
+                    conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
-                    foreach (char el in Conc)
+                    foreach (char el in conc)
                         {
-                        this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
+                        this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
                         count++;
                         }
 
@@ -156,15 +156,15 @@
                     button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && ErrorCount <= 2)
+                if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
-                    Conc = g.conclusion;
+                    conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
-                    foreach (char el in Conc)
+                    foreach (char el in conc)
                         {
-                        this.Controls["label" + (count + 1).ToString()].Text = Conc[count].ToString();
+                        this.Controls["label" + (count + 1).ToString()].Text = conc[count].ToString();
                         count++;
                         }
 
@@ -178,7 +178,7 @@
                     button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && ErrorCount > 2 || Convert.ToInt32(complexity) == 1 && ErrorCount > 4 || Convert.ToInt32(complexity) == 3)
+                if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
                     {
                     Form6 f6 = new Form6();
                     this.Hide();
@@ -198,23 +198,11 @@
             }
 
         /// <summary>
-        /// Change of color of buttons on the initial.
-        /// </summary>
-        public void ButtonColor()
-            {
-            for (int d = 2; d < 28; d++)
-                {
-                this.Controls["button" + (d).ToString()].BackColor = Color.Transparent;
-                this.Controls["button" + (d).ToString()].Enabled = true;
-                }
-            }
-
-        /// <summary>
         /// Transition to a following word.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button28_Click(object sender, EventArgs e)
+        private void Button28Click(object sender, EventArgs e)
             {
             button28.Visible = false;
             g.Filiing_word();
@@ -230,7 +218,7 @@
 
             for (int i = g.conclusion.Length + 1; i < 11; i++)
                 {
-                this.Controls["label" + i.ToString()].Text = "";
+                this.Controls["label" + i.ToString()].Text = " ";
                 }
 
             //We return a picture in initial position.
@@ -243,7 +231,7 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1Click(object sender, EventArgs e)
             {
             Game.RightWordsCounter = 0;
             g.LastNumberCounter = 0;
@@ -255,7 +243,23 @@
             this.Close();
             f3.Show();
             }
+
+        /// <summary>
+        /// Conclusion of the name of a category.
+        /// </summary>
+        /// <param name="param"></param>
+        void Reload(string param)
+            {
+            label12.Text = param;
+            }
+
+        /// <summary>
+        /// Record of value of complexity.
+        /// </summary>
+        /// <param name="param2"></param>
+        void Relod2(int param2)
+            {
+            complexity = param2;
+            }
         }
     }
-
-

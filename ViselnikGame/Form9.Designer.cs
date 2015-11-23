@@ -1,5 +1,14 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form9.Designer.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
+    /// <summary>
+    /// Copy of a class of the form.
+    /// </summary>
     partial class Form9
         {
         /// <summary>
@@ -13,10 +22,11 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
             {
-            if (disposing && (components != null))
+            if (disposing && (this.components != null))
                 {
-                components.Dispose();
+                this.components.Dispose();
                 }
+
             base.Dispose(disposing);
             }
 
@@ -45,7 +55,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "EASY";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1Click);
             // 
             // button2
             // 
@@ -59,7 +69,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "AVERAGE";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2Click);
             // 
             // button3
             // 
@@ -73,7 +83,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "HARD";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3Click);
             // 
             // Form9
             // 
@@ -94,8 +104,19 @@
 
         #endregion
 
+        /// <summary>
+        /// Button easy
+        /// </summary>
         private System.Windows.Forms.Button button1;
+
+        /// <summary>
+        /// Button average
+        /// </summary>
         private System.Windows.Forms.Button button2;
+
+        /// <summary>
+        /// Button hard
+        /// </summary>
         private System.Windows.Forms.Button button3;
         }
     }

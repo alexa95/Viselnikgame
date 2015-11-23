@@ -1,4 +1,10 @@
-﻿namespace ViselnikGame
+﻿//<copyright file="Form3.cs" company="OmGTU"> 
+//Copyright (c) OmGTU. All rights reserved.
+//</copyright> 
+//<author>
+//Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
+//</author> 
+namespace ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -26,33 +32,33 @@
         /// <summary>
         ///  Line in which we place the category name.
         /// </summary>
-        public string d;
+        public string D;
 
         /// <summary>
         /// Function of a choice of a category and transition to the form with a complexity choice.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void categories(object sender, EventArgs e)
+        private void Categories(object sender, EventArgs e)
             {
-            d = ActiveControl.Text;
-            if (d == "ANIMALS")
+            D = ActiveControl.Text;
+            if (D == "ANIMALS")
                 {
                 Game.words = Game.Animals;
                 }
 
-            if (d == "FOOD")
+            if (D == "FOOD")
                 {
                 Game.words = Game.Food;
                 }
 
-            if (d == "TRANSPORT")
+            if (D == "TRANSPORT")
                 {
                 Game.words = Game.Transport;
                 }
 
             Form9 frm9 = new Form9();
-            frm9.categories = d;
+            frm9.Categories = D;
             this.Hide();
             frm9.Show();
             }
@@ -62,7 +68,7 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4Click(object sender, EventArgs e)
             {
             Form2 f2 = new Form2();
             this.Hide();
