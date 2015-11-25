@@ -112,6 +112,10 @@ namespace ViselnikGame
             // We remove the transition button on следуюшее a word.
             if (g.WinCounter > g.LastNumberCounter)
                 {
+                for (int i = 2; i < 28; i++)
+                    {
+                    this.Controls["button" + (i).ToString()].Enabled = false;
+                    }
                 button28.Visible = true;
                 }
 
@@ -207,6 +211,8 @@ namespace ViselnikGame
             button28.Visible = false;
             g.Filiing_word();
             g.Filling_conclusion();
+            g.WrongLettersCounter = 0;
+            Game.CorrectLettersCounter = 0;
             int count = 0;
 
             // We specify how many letters in a following word.
