@@ -163,6 +163,15 @@
     </Content>
     <Content Include="Resources\7.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+</Content>
+    <Content Include="Resources\FOOD.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+</Content>
+    <Content Include="Resources\animals.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+</Content>
+    <Content Include="Resources\transport.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Gf60xc4hVzU.jpg" />
     <None Include="Resources\background2.jpg" />

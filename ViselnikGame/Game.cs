@@ -1,11 +1,12 @@
-﻿using System;
+﻿
+namespace ViselnikGame
+    {
+    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace ViselnikGame
-    {
+using System.IO;
     /// <summary>
     /// This class contains logic of game.
     /// </summary>
@@ -14,17 +15,17 @@ namespace ViselnikGame
         /// <summary>
         /// Create files of words.
         /// </summary>
-        public static string[] Food = { "SOUP", "APPLE", "PORIGE", "BANAN", "CHICKEN" };
+        public static string[] Food = File.ReadAllLines(@"Resources\FOOD.txt");
 
         /// <summary>
         /// Create files of words.
         /// </summary>
-        public static string[] Transport = { "TRAM", "BUS", "MOTOBIKE", "CAR", "BIKE" };
+        public static string[] Transport = File.ReadAllLines(@"Resources\transport.txt");
 
         /// <summary>
         /// Create files of words.
         /// </summary>
-        public static string[] Animals = { "DOG", "CAT", "RABBIT", "GIRAFE", "MOUSE" };
+        public static string[] Animals = File.ReadAllLines(@"Resources\animals.txt");
         
         /// <summary>
         /// Create a letter.
