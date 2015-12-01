@@ -44,6 +44,9 @@ namespace ViselnikGame
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
