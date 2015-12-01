@@ -762,7 +762,6 @@ namespace ViselnikGame
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::ViselnikGame.Properties.Resources.vis0;
             this.pictureBox1.ImageLocation = " ";
             this.pictureBox1.InitialImage = global::ViselnikGame.Properties.Resources.vis0;
             this.pictureBox1.Location = new System.Drawing.Point(749, 95);
