@@ -46,6 +46,9 @@ namespace ViselnikGame
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonFood;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -60,6 +63,9 @@ namespace ViselnikGame
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonTransport;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -74,6 +80,9 @@ namespace ViselnikGame
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonAnimals;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -89,6 +98,9 @@ namespace ViselnikGame
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -101,8 +113,7 @@ namespace ViselnikGame
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(1384, 761);
