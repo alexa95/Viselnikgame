@@ -84,6 +84,10 @@ namespace ViselnikGame
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(62, 676);
             this.button1.Name = "button1";
@@ -95,6 +99,11 @@ namespace ViselnikGame
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.AutoSize = true;
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -102,7 +111,7 @@ namespace ViselnikGame
             this.button2.Location = new System.Drawing.Point(69, 430);
             this.button2.Margin = new System.Windows.Forms.Padding(123);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
+            this.button2.Size = new System.Drawing.Size(43, 41);
             this.button2.TabIndex = 5;
             this.button2.Text = "A";
             this.button2.UseVisualStyleBackColor = false;
@@ -110,6 +119,9 @@ namespace ViselnikGame
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -122,6 +134,11 @@ namespace ViselnikGame
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.AutoSize = true;
+            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -129,7 +146,7 @@ namespace ViselnikGame
             this.button3.Location = new System.Drawing.Point(231, 587);
             this.button3.Margin = new System.Windows.Forms.Padding(123);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 60);
+            this.button3.Size = new System.Drawing.Size(45, 41);
             this.button3.TabIndex = 12;
             this.button3.Text = "U";
             this.button3.UseVisualStyleBackColor = false;
@@ -137,6 +154,11 @@ namespace ViselnikGame
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.AutoSize = true;
+            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -144,7 +166,7 @@ namespace ViselnikGame
             this.button4.Location = new System.Drawing.Point(159, 587);
             this.button4.Margin = new System.Windows.Forms.Padding(123);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 60);
+            this.button4.Size = new System.Drawing.Size(42, 41);
             this.button4.TabIndex = 13;
             this.button4.Text = "T";
             this.button4.UseVisualStyleBackColor = false;
@@ -152,6 +174,11 @@ namespace ViselnikGame
             // 
             // button5
             // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.AutoSize = true;
+            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -159,7 +186,7 @@ namespace ViselnikGame
             this.button5.Location = new System.Drawing.Point(87, 587);
             this.button5.Margin = new System.Windows.Forms.Padding(123);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 60);
+            this.button5.Size = new System.Drawing.Size(43, 41);
             this.button5.TabIndex = 14;
             this.button5.Text = "S";
             this.button5.UseVisualStyleBackColor = false;
@@ -167,6 +194,11 @@ namespace ViselnikGame
             // 
             // button6
             // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.AutoSize = true;
+            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -174,7 +206,7 @@ namespace ViselnikGame
             this.button6.Location = new System.Drawing.Point(620, 506);
             this.button6.Margin = new System.Windows.Forms.Padding(123);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 60);
+            this.button6.Size = new System.Drawing.Size(45, 41);
             this.button6.TabIndex = 15;
             this.button6.Text = "R";
             this.button6.UseVisualStyleBackColor = false;
@@ -182,6 +214,11 @@ namespace ViselnikGame
             // 
             // button7
             // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.AutoSize = true;
+            this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -189,7 +226,7 @@ namespace ViselnikGame
             this.button7.Location = new System.Drawing.Point(551, 506);
             this.button7.Margin = new System.Windows.Forms.Padding(123);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(60, 60);
+            this.button7.Size = new System.Drawing.Size(46, 41);
             this.button7.TabIndex = 16;
             this.button7.Text = "Q";
             this.button7.UseVisualStyleBackColor = false;
@@ -197,6 +234,11 @@ namespace ViselnikGame
             // 
             // button8
             // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.AutoSize = true;
+            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -204,7 +246,7 @@ namespace ViselnikGame
             this.button8.Location = new System.Drawing.Point(482, 506);
             this.button8.Margin = new System.Windows.Forms.Padding(123);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(60, 60);
+            this.button8.Size = new System.Drawing.Size(43, 41);
             this.button8.TabIndex = 17;
             this.button8.Text = "P";
             this.button8.UseVisualStyleBackColor = false;
@@ -212,6 +254,11 @@ namespace ViselnikGame
             // 
             // button9
             // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.AutoSize = true;
+            this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -219,7 +266,7 @@ namespace ViselnikGame
             this.button9.Location = new System.Drawing.Point(413, 506);
             this.button9.Margin = new System.Windows.Forms.Padding(123);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(60, 60);
+            this.button9.Size = new System.Drawing.Size(46, 41);
             this.button9.TabIndex = 18;
             this.button9.Text = "O";
             this.button9.UseVisualStyleBackColor = false;
@@ -227,6 +274,11 @@ namespace ViselnikGame
             // 
             // button10
             // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.AutoSize = true;
+            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -234,7 +286,7 @@ namespace ViselnikGame
             this.button10.Location = new System.Drawing.Point(344, 506);
             this.button10.Margin = new System.Windows.Forms.Padding(123);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(60, 60);
+            this.button10.Size = new System.Drawing.Size(45, 41);
             this.button10.TabIndex = 19;
             this.button10.Text = "N";
             this.button10.UseVisualStyleBackColor = false;
@@ -242,6 +294,11 @@ namespace ViselnikGame
             // 
             // button11
             // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.AutoSize = true;
+            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -249,7 +306,7 @@ namespace ViselnikGame
             this.button11.Location = new System.Drawing.Point(275, 506);
             this.button11.Margin = new System.Windows.Forms.Padding(123);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(60, 60);
+            this.button11.Size = new System.Drawing.Size(47, 41);
             this.button11.TabIndex = 20;
             this.button11.Text = "M";
             this.button11.UseVisualStyleBackColor = false;
@@ -257,6 +314,11 @@ namespace ViselnikGame
             // 
             // button12
             // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.AutoSize = true;
+            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -264,7 +326,7 @@ namespace ViselnikGame
             this.button12.Location = new System.Drawing.Point(206, 506);
             this.button12.Margin = new System.Windows.Forms.Padding(123);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(60, 60);
+            this.button12.Size = new System.Drawing.Size(40, 41);
             this.button12.TabIndex = 21;
             this.button12.Text = "L";
             this.button12.UseVisualStyleBackColor = false;
@@ -272,6 +334,11 @@ namespace ViselnikGame
             // 
             // button13
             // 
+            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button13.AutoSize = true;
+            this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button13.BackColor = System.Drawing.Color.Transparent;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -279,7 +346,7 @@ namespace ViselnikGame
             this.button13.Location = new System.Drawing.Point(137, 506);
             this.button13.Margin = new System.Windows.Forms.Padding(123);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(60, 60);
+            this.button13.Size = new System.Drawing.Size(43, 41);
             this.button13.TabIndex = 22;
             this.button13.Text = "K";
             this.button13.UseVisualStyleBackColor = false;
@@ -287,6 +354,11 @@ namespace ViselnikGame
             // 
             // button14
             // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.AutoSize = true;
+            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button14.BackColor = System.Drawing.Color.Transparent;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -294,7 +366,7 @@ namespace ViselnikGame
             this.button14.Location = new System.Drawing.Point(68, 506);
             this.button14.Margin = new System.Windows.Forms.Padding(123);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(60, 60);
+            this.button14.Size = new System.Drawing.Size(39, 41);
             this.button14.TabIndex = 23;
             this.button14.Text = "J";
             this.button14.UseVisualStyleBackColor = false;
@@ -302,6 +374,11 @@ namespace ViselnikGame
             // 
             // button15
             // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.AutoSize = true;
+            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button15.BackColor = System.Drawing.Color.Transparent;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -309,7 +386,7 @@ namespace ViselnikGame
             this.button15.Location = new System.Drawing.Point(344, 430);
             this.button15.Margin = new System.Windows.Forms.Padding(123);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(60, 60);
+            this.button15.Size = new System.Drawing.Size(43, 41);
             this.button15.TabIndex = 24;
             this.button15.Text = "E";
             this.button15.UseVisualStyleBackColor = false;
@@ -317,6 +394,11 @@ namespace ViselnikGame
             // 
             // button16
             // 
+            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button16.AutoSize = true;
+            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button16.BackColor = System.Drawing.Color.Transparent;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -324,7 +406,7 @@ namespace ViselnikGame
             this.button16.Location = new System.Drawing.Point(620, 430);
             this.button16.Margin = new System.Windows.Forms.Padding(123);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(60, 60);
+            this.button16.Size = new System.Drawing.Size(33, 41);
             this.button16.TabIndex = 25;
             this.button16.Text = "I";
             this.button16.UseVisualStyleBackColor = false;
@@ -332,6 +414,11 @@ namespace ViselnikGame
             // 
             // button17
             // 
+            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button17.AutoSize = true;
+            this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button17.BackColor = System.Drawing.Color.Transparent;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -339,7 +426,7 @@ namespace ViselnikGame
             this.button17.Location = new System.Drawing.Point(551, 430);
             this.button17.Margin = new System.Windows.Forms.Padding(123);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(60, 60);
+            this.button17.Size = new System.Drawing.Size(45, 41);
             this.button17.TabIndex = 26;
             this.button17.Text = "H";
             this.button17.UseVisualStyleBackColor = false;
@@ -347,6 +434,11 @@ namespace ViselnikGame
             // 
             // button18
             // 
+            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button18.AutoSize = true;
+            this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button18.BackColor = System.Drawing.Color.Transparent;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -354,7 +446,7 @@ namespace ViselnikGame
             this.button18.Location = new System.Drawing.Point(482, 430);
             this.button18.Margin = new System.Windows.Forms.Padding(123);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(60, 60);
+            this.button18.Size = new System.Drawing.Size(46, 41);
             this.button18.TabIndex = 27;
             this.button18.Text = "G";
             this.button18.UseVisualStyleBackColor = false;
@@ -362,6 +454,11 @@ namespace ViselnikGame
             // 
             // button19
             // 
+            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button19.AutoSize = true;
+            this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button19.BackColor = System.Drawing.Color.Transparent;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -369,7 +466,7 @@ namespace ViselnikGame
             this.button19.Location = new System.Drawing.Point(413, 430);
             this.button19.Margin = new System.Windows.Forms.Padding(123);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(60, 60);
+            this.button19.Size = new System.Drawing.Size(42, 41);
             this.button19.TabIndex = 28;
             this.button19.Text = "F";
             this.button19.UseVisualStyleBackColor = false;
@@ -377,6 +474,11 @@ namespace ViselnikGame
             // 
             // button20
             // 
+            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button20.AutoSize = true;
+            this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button20.BackColor = System.Drawing.Color.Transparent;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -384,7 +486,7 @@ namespace ViselnikGame
             this.button20.Location = new System.Drawing.Point(275, 430);
             this.button20.Margin = new System.Windows.Forms.Padding(123);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(60, 60);
+            this.button20.Size = new System.Drawing.Size(45, 41);
             this.button20.TabIndex = 29;
             this.button20.Text = "D";
             this.button20.UseVisualStyleBackColor = false;
@@ -392,6 +494,11 @@ namespace ViselnikGame
             // 
             // button21
             // 
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.AutoSize = true;
+            this.button21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button21.BackColor = System.Drawing.Color.Transparent;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -399,7 +506,7 @@ namespace ViselnikGame
             this.button21.Location = new System.Drawing.Point(206, 430);
             this.button21.Margin = new System.Windows.Forms.Padding(123);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(60, 60);
+            this.button21.Size = new System.Drawing.Size(45, 41);
             this.button21.TabIndex = 30;
             this.button21.Text = "C";
             this.button21.UseVisualStyleBackColor = false;
@@ -407,6 +514,11 @@ namespace ViselnikGame
             // 
             // button23
             // 
+            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button23.AutoSize = true;
+            this.button23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button23.BackColor = System.Drawing.Color.Transparent;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -414,7 +526,7 @@ namespace ViselnikGame
             this.button23.Location = new System.Drawing.Point(303, 587);
             this.button23.Margin = new System.Windows.Forms.Padding(123);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(60, 60);
+            this.button23.Size = new System.Drawing.Size(43, 41);
             this.button23.TabIndex = 32;
             this.button23.Text = "V";
             this.button23.UseVisualStyleBackColor = false;
@@ -422,6 +534,11 @@ namespace ViselnikGame
             // 
             // button24
             // 
+            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button24.AutoSize = true;
+            this.button24.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button24.BackColor = System.Drawing.Color.Transparent;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -429,7 +546,7 @@ namespace ViselnikGame
             this.button24.Location = new System.Drawing.Point(447, 587);
             this.button24.Margin = new System.Windows.Forms.Padding(123);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(60, 60);
+            this.button24.Size = new System.Drawing.Size(43, 41);
             this.button24.TabIndex = 33;
             this.button24.Text = "X";
             this.button24.UseVisualStyleBackColor = false;
@@ -437,6 +554,11 @@ namespace ViselnikGame
             // 
             // button25
             // 
+            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button25.AutoSize = true;
+            this.button25.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button25.BackColor = System.Drawing.Color.Transparent;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -444,7 +566,7 @@ namespace ViselnikGame
             this.button25.Location = new System.Drawing.Point(375, 587);
             this.button25.Margin = new System.Windows.Forms.Padding(123);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(60, 60);
+            this.button25.Size = new System.Drawing.Size(50, 41);
             this.button25.TabIndex = 34;
             this.button25.Text = "W";
             this.button25.UseVisualStyleBackColor = false;
@@ -452,6 +574,11 @@ namespace ViselnikGame
             // 
             // button26
             // 
+            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button26.AutoSize = true;
+            this.button26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button26.BackColor = System.Drawing.Color.Transparent;
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -459,7 +586,7 @@ namespace ViselnikGame
             this.button26.Location = new System.Drawing.Point(519, 587);
             this.button26.Margin = new System.Windows.Forms.Padding(123);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(60, 60);
+            this.button26.Size = new System.Drawing.Size(43, 41);
             this.button26.TabIndex = 35;
             this.button26.Text = "Y";
             this.button26.UseVisualStyleBackColor = false;
@@ -467,6 +594,11 @@ namespace ViselnikGame
             // 
             // button27
             // 
+            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button27.AutoSize = true;
+            this.button27.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button27.BackColor = System.Drawing.Color.Transparent;
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -474,7 +606,7 @@ namespace ViselnikGame
             this.button27.Location = new System.Drawing.Point(591, 587);
             this.button27.Margin = new System.Windows.Forms.Padding(123);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(60, 60);
+            this.button27.Size = new System.Drawing.Size(42, 41);
             this.button27.TabIndex = 36;
             this.button27.Text = "Z";
             this.button27.UseVisualStyleBackColor = false;
@@ -482,6 +614,11 @@ namespace ViselnikGame
             // 
             // button22
             // 
+            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button22.AutoSize = true;
+            this.button22.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button22.BackColor = System.Drawing.Color.Transparent;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -489,7 +626,7 @@ namespace ViselnikGame
             this.button22.Location = new System.Drawing.Point(137, 430);
             this.button22.Margin = new System.Windows.Forms.Padding(123);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(60, 60);
+            this.button22.Size = new System.Drawing.Size(43, 41);
             this.button22.TabIndex = 41;
             this.button22.Text = "B";
             this.button22.UseVisualStyleBackColor = false;
@@ -497,6 +634,9 @@ namespace ViselnikGame
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(372, 19);
             this.label11.Name = "label11";
@@ -505,6 +645,9 @@ namespace ViselnikGame
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -518,6 +661,10 @@ namespace ViselnikGame
             // 
             // button28
             // 
+            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button28.Location = new System.Drawing.Point(381, 676);
             this.button28.Name = "button28";
@@ -530,6 +677,9 @@ namespace ViselnikGame
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -542,6 +692,9 @@ namespace ViselnikGame
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -554,6 +707,9 @@ namespace ViselnikGame
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -566,6 +722,9 @@ namespace ViselnikGame
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -578,6 +737,9 @@ namespace ViselnikGame
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -590,6 +752,9 @@ namespace ViselnikGame
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -602,6 +767,9 @@ namespace ViselnikGame
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -614,6 +782,9 @@ namespace ViselnikGame
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -626,6 +797,9 @@ namespace ViselnikGame
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -638,23 +812,23 @@ namespace ViselnikGame
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::ViselnikGame.Properties.Resources.vis0;
-            this.pictureBox1.ImageLocation = " ";
-            this.pictureBox1.InitialImage = global::ViselnikGame.Properties.Resources.vis0;
-            this.pictureBox1.Location = new System.Drawing.Point(749, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(766, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(584, 643);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.exampleWindowVideo1;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button22);
@@ -694,7 +868,6 @@ namespace ViselnikGame
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
@@ -707,10 +880,7 @@ namespace ViselnikGame
 
         #endregion
 
-        /// <summary>
-        /// Picture Box
-        /// </summary>
-        private System.Windows.Forms.PictureBox pictureBox1;
+
 
         /// <summary>
         /// Button surround
@@ -915,5 +1085,6 @@ namespace ViselnikGame
         /// Button next word
         /// </summary>
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.PictureBox pictureBox1;
         }
     }

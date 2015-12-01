@@ -45,9 +45,10 @@ namespace ViselnikGame
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonExit;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -62,9 +63,10 @@ namespace ViselnikGame
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button3.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonHelp;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -79,9 +81,10 @@ namespace ViselnikGame
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonStart;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -96,16 +99,16 @@ namespace ViselnikGame
             // 
             // Form2
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.ClientSize = new System.Drawing.Size(1292, 732);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1400, 800);
-            this.MinimumSize = new System.Drawing.Size(1400, 800);
+            this.MinimumSize = new System.Drawing.Size(1216, 718);
             this.Name = "Form2";
             this.RightToLeftLayout = true;
             this.Text = "HANGED MAN";
