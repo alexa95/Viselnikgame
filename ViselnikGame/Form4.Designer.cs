@@ -761,13 +761,10 @@ namespace ViselnikGame
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.ImageLocation = " ";
-            this.pictureBox1.InitialImage = global::ViselnikGame.Properties.Resources.vis0;
-            this.pictureBox1.Location = new System.Drawing.Point(749, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(766, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(584, 643);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
             // 
             // Form4
@@ -776,6 +773,7 @@ namespace ViselnikGame
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.exampleWindowVideo1;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button22);
@@ -815,7 +813,6 @@ namespace ViselnikGame
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
@@ -828,10 +825,7 @@ namespace ViselnikGame
 
         #endregion
 
-        /// <summary>
-        /// Picture Box
-        /// </summary>
-        private System.Windows.Forms.PictureBox pictureBox1;
+
 
         /// <summary>
         /// Button surround
@@ -1036,5 +1030,6 @@ namespace ViselnikGame
         /// Button next word
         /// </summary>
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.PictureBox pictureBox1;
         }
     }
