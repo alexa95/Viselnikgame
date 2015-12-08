@@ -36,7 +36,6 @@
         /// <param name="e"></param>
         private void Button1Click(object sender, EventArgs e)
             {
-          
             Application.Exit();
             }
 
