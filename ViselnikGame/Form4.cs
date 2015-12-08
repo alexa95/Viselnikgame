@@ -138,7 +138,7 @@ namespace ViselnikGame
                 count = 0;
                 errorCount++;
                 g.WrongLettersCounter = 0;
-                if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
+                if (Convert.ToInt32(complexity) == 1 && errorCount <= 19)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     conc = g.conclusion;
@@ -160,7 +160,7 @@ namespace ViselnikGame
                     button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
+                if (Convert.ToInt32(complexity) == 2 && errorCount <= 10)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     conc = g.conclusion;
@@ -182,7 +182,7 @@ namespace ViselnikGame
                     button28.Visible = true;
                     }
 
-                if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
+                if ((Convert.ToInt32(complexity) == 2 && errorCount > 10) || (Convert.ToInt32(complexity) == 1 && errorCount > 19) || (Convert.ToInt32(complexity) == 3))
                     {
                     Form6 f6 = new Form6();
                     this.Hide();
@@ -196,7 +196,8 @@ namespace ViselnikGame
                         }
                     }
                 }
-
+            label13.Text = "Guess words: " + (g.WinCounter-errorCount).ToString();
+            label14.Text = "Not guess the word: " + errorCount.ToString();
             ActiveControl.Enabled = false;
             button1.Enabled = true;
             }
