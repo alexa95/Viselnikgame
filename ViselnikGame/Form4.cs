@@ -140,7 +140,7 @@ namespace ViselnikGame
                 g.WrongLettersCounter = 0;
                 if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
-                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
+                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.
@@ -162,7 +162,7 @@ namespace ViselnikGame
 
                 if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
-                    g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
+                    g.conclusion = Game.words[Convert.ToInt32(g.random[Game.RightWordsCounter])].ToCharArray();
                     conc = g.conclusion;
 
                     // We remove a fur-tree letter the correct has been pressed.

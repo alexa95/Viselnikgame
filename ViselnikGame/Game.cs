@@ -38,9 +38,9 @@ namespace ViselnikGame
         /// </summary>
         Random rand = new Random();
         /// <summary>
-        /// 
+        /// массив индексов 
         /// </summary>
-        string[] random = new string[5];
+        public string[] random = new string[5];
 
         /// <summary>
         /// Create a letter.
