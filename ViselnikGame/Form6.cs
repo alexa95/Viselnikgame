@@ -4,7 +4,7 @@
 //<author>
 //Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
 //</author> 
-namespace ViselnikGame
+namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     {
     using System;
     using System.Collections.Generic;
