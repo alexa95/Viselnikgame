@@ -4,7 +4,7 @@
 //<author>
 //Kalita Aleksandr, Valyn Ivan, Loshchinina Tatyana
 //</author> 
-   namespace ViselnikGame
+namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
     {
     using System;
     using System.Collections.Generic;
@@ -16,19 +16,29 @@
     using System.Threading.Tasks;
     using System.Windows.Forms;
 
+   
+    
+
     /// <summary>
-    /// Copy of a class of the form.
+    /// Copy of a class of the form. 
     /// </summary>
     public partial class Form2 : Form
         {
+ 
+        public WMPLib.WindowsMediaPlayer WMP = new WMPLib.WindowsMediaPlayer();
+
         /// <summary>
         /// Form start.
         /// </summary>
+        int v;
         public Form2()
             {
             InitializeComponent();
+            WMP.settings.autoStart = true;
+            WMP.URL = @"sound.mp3";
             }
 
+        
         /// <summary>
         ///  Exit from the program.
         /// </summary>
@@ -61,6 +71,21 @@
             Form5 f5 = new Form5();
             this.Hide();
             f5.Show();
+
+            }
+        
+
+      
+        private void Music(object sender, EventArgs e)
+            {
+            if (WMPLib.WMPPlayState.wmppsPaused == WMP.playState)
+                {
+                WMP.controls.play();
+                }
+            else 
+                {
+                WMP.controls.pause();
+                }
             }
         }
     }
