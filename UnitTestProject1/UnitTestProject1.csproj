@@ -55,9 +55,9 @@
     <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ViselnikGame\ViselnikGame.csproj">
+    <ProjectReference Include="..\ViselnikGame\OmGTU.Advance. Profit. Loyal.ViselnikGame.csproj">
       <Project>{d639c03f-a301-4798-b9c1-2644baffb9f7}</Project>
-      <Name>ViselnikGame</Name>
+      <Name>OmGTU.Advance. Profit. Loyal.ViselnikGame</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

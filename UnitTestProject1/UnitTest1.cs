@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ViselnikGame;
+using OmGTU.Advance.Profit.Loyal.ViselnikGame;
 namespace UnitTestProject1
     {
     [TestClass]

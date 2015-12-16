@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViselnikGame", "ViselnikGame\ViselnikGame.csproj", "{D639C03F-A301-4798-B9C1-2644BAFFB9F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmGTU.Advance. Profit. Loyal.ViselnikGame", "ViselnikGame\OmGTU.Advance. Profit. Loyal.ViselnikGame.csproj", "{D639C03F-A301-4798-B9C1-2644BAFFB9F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{D4C715EC-0A41-49AB-A096-AE997FA9F64C}"
 EndProject
