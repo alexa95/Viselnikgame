@@ -817,7 +817,7 @@ namespace ViselnikGame
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Location = new System.Drawing.Point(766, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(584, 643);
@@ -832,8 +832,9 @@ namespace ViselnikGame
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label13.Location = new System.Drawing.Point(773, 58);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
+            this.label13.Size = new System.Drawing.Size(133, 20);
             this.label13.TabIndex = 87;
+            this.label13.Text = "Guess words: 0";
             // 
             // label14
             // 
@@ -843,8 +844,9 @@ namespace ViselnikGame
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label14.Location = new System.Drawing.Point(974, 63);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 20);
+            this.label14.Size = new System.Drawing.Size(184, 20);
             this.label14.TabIndex = 88;
+            this.label14.Text = "Not guess the word: 0";
             // 
             // Form4
             // 

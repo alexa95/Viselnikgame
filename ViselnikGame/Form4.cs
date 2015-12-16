@@ -123,7 +123,7 @@ namespace ViselnikGame
             pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
 
             // If all words have been guessed that we remove the form for a victory.
-            if (g.WinCounter == Game.words.Length)
+            if (g.WinCounter == 5)
                 {
                 Form8 f8 = new Form8();
                 this.Hide();
@@ -133,12 +133,12 @@ namespace ViselnikGame
                 Game.RightWordsCounter = 0;
                 }
 
-            if (g.WrongLettersCounter == 7)
+            if (g.WrongLettersCounter == 7 )
                 {
                 count = 0;
                 errorCount++;
                 g.WrongLettersCounter = 0;
-                if (Convert.ToInt32(complexity) == 1 && errorCount <= 19)
+                if (Convert.ToInt32(complexity) == 1 && errorCount <= 4)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     conc = g.conclusion;
@@ -160,7 +160,7 @@ namespace ViselnikGame
                     button28.Visible = true;
                     }
 
-                if (Convert.ToInt32(complexity) == 2 && errorCount <= 10)
+                if (Convert.ToInt32(complexity) == 2 && errorCount <= 2)
                     {
                     g.conclusion = Game.words[Game.RightWordsCounter].ToCharArray();
                     conc = g.conclusion;
@@ -182,7 +182,7 @@ namespace ViselnikGame
                     button28.Visible = true;
                     }
 
-                if ((Convert.ToInt32(complexity) == 2 && errorCount > 10) || (Convert.ToInt32(complexity) == 1 && errorCount > 19) || (Convert.ToInt32(complexity) == 3))
+                if ((Convert.ToInt32(complexity) == 2 && errorCount > 2) || (Convert.ToInt32(complexity) == 1 && errorCount > 4) || (Convert.ToInt32(complexity) == 3))
                     {
                     Form6 f6 = new Form6();
                     this.Hide();
@@ -210,7 +210,6 @@ namespace ViselnikGame
         private void Button28Click(object sender, EventArgs e)
             {
             button28.Visible = false;
-            g.Filiing_word();
             g.Filling_conclusion();
             g.WrongLettersCounter = 0;
             Game.CorrectLettersCounter = 0;
