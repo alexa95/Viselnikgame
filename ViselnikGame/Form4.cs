@@ -110,7 +110,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                 }
 
             // We remove the transition button on следуюшее a word.
-            if (g.WinCounter > g.LastNumberCounter)
+            if (Game.RightWordsCounter > g.LastNumberCounter)
                 {
                 for (int i = 2; i < 28; i++)
                     {
@@ -121,17 +121,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
 
             //We remove a gallows picture if there was нажта an incorrect letter.
             pictureBox1.Image = Image.FromFile(@"Resources\" + g.WrongLettersCounter + ".jpg");
-
-            // If all words have been guessed that we remove the form for a victory.
-            if (g.WinCounter == 5)
-                {
-                Form8 f8 = new Form8();
-                this.Hide();
-                f8.Show();
-                g.WinCounter = 0;
-                g.WrongLettersCounter = 0;
-                Game.RightWordsCounter = 0;
-                }
 
             if (g.WrongLettersCounter == 7 )
                 {
@@ -150,8 +139,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         count++;
                         }
 
-                    Game.RightWordsCounter++;
-                    g.WinCounter++;
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
@@ -172,8 +159,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         count++;
                         }
 
-                    Game.RightWordsCounter++;
-                    g.WinCounter++;
+                    
                     for (int i = 2; i < 28; i++)
                         {
                         this.Controls["button" + (i).ToString()].Enabled = false;
@@ -196,7 +182,14 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
                         }
                     }
                 }
-            label13.Text = "Guess words: " + (g.WinCounter-errorCount).ToString();
+            if (Game.RightWordsCounter > errorCount && (Game.RightWordsCounter - errorCount)!=0 )
+                {
+                label13.Text = "Guess words: " + (Game.RightWordsCounter - errorCount).ToString();
+                }
+            if (Game.RightWordsCounter == 0 || Game.RightWordsCounter < errorCount)
+                {
+                label13.Text = "Guess words: 0";
+                }
             label14.Text = "Not guess the word: " + errorCount.ToString();
             ActiveControl.Enabled = false;
             button1.Enabled = true;
@@ -209,6 +202,8 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// <param name="e"></param>
         private void Button28Click(object sender, EventArgs e)
             {
+            g.WinCounter++;
+            Game.RightWordsCounter = g.WinCounter;
             button28.Visible = false;
             g.Filling_conclusion();
             g.WrongLettersCounter = 0;
@@ -230,6 +225,16 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             //We return a picture in initial position.
             pictureBox1.Image = Image.FromFile(@"Resources\0.jpg");
             ButtonColor();
+            // If all words have been guessed that we remove the form for a victory.
+            if (g.WinCounter == 5)
+                {
+                Form8 f8 = new Form8();
+                this.Hide();
+                f8.Show();
+                g.WinCounter = 0;
+                g.WrongLettersCounter = 0;
+                Game.RightWordsCounter = 0;
+                }
             }
 
         /// <summary>

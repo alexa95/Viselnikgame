@@ -40,7 +40,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// <summary>
         /// массив индексов 
         /// </summary>
-        public string[] random = new string[5];
+        public string[] random = new string[6];
 
         /// <summary>
         /// Create a letter.
@@ -78,7 +78,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public void Filiing_word()
             {
             string randm = rand.Next(0, 20).ToString();
-            for (int i = 0; i < random.Length; i++)
+            for (int i = 0; i < 5; i++)
                 {
                 if (random[i] != null)
                     {
@@ -146,11 +146,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             // Если счетчик правильных букв равен длине слова то увеличиваем счетчики правильных слов на единицу переходим на след слово и обнуляем счетчки правильных и неправильных букв.
             if (CorrectLettersCounter == word.Length)
                 {
-                WinCounter++;
                 RightWordsCounter++;
-                WrongLettersCounter = 0;
-                CorrectLettersCounter = 0;
-
                 }
 
             }
