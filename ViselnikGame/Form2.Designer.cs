@@ -41,7 +41,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -98,22 +97,12 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 31);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Music);
-            // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ViselnikGame.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1292, 732);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -143,6 +132,5 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         /// Button start
         /// </summary>
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
         }
     }

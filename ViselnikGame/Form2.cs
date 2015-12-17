@@ -34,8 +34,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
         public Form2()
             {
             InitializeComponent();
-            WMP.settings.autoStart = true;
-            WMP.URL = @"sound.mp3";
             }
 
         
@@ -73,19 +71,6 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             f5.Show();
 
             }
-        
-
-      
-        private void Music(object sender, EventArgs e)
-            {
-            if (WMPLib.WMPPlayState.wmppsPaused == WMP.playState)
-                {
-                WMP.controls.play();
-                }
-            else 
-                {
-                WMP.controls.pause();
-                }
             }
         }
-    }
+    
