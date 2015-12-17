@@ -125,6 +125,7 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.MinimumSize = new System.Drawing.Size(1216, 718);
             this.Name = "Form2";
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HANGED MAN";
             this.ResumeLayout(false);
             this.PerformLayout();
