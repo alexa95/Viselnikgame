@@ -49,9 +49,9 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackgroundImage = global::ViselnikGame.Properties.Resources.buttonBack;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(12, 676);
+            this.button1.Location = new System.Drawing.Point(12, 644);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 44);
+            this.button1.Size = new System.Drawing.Size(311, 76);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1Click);
