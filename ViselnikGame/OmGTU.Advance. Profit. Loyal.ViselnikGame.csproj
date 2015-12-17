@@ -175,6 +175,7 @@
     <None Include="Resources\hard.jpg" />
     <None Include="Resources\next_world.jpg" />
     <None Include="Resources\surrenden.jpg" />
+    <None Include="Resources\LOSE.png" />
     <Content Include="Resources\transport.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
