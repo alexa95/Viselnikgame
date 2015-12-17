@@ -90,13 +90,15 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(62, 676);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(310, 73);
             this.button1.TabIndex = 3;
             this.button1.Text = "SURRENDER";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1Click);
             // 
             // button2
@@ -667,13 +669,15 @@ namespace OmGTU.Advance.Profit.Loyal.ViselnikGame
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button28.BackColor = System.Drawing.Color.Transparent;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button28.Location = new System.Drawing.Point(381, 676);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(310, 73);
             this.button28.TabIndex = 85;
             this.button28.Text = "NEXT WORD";
-            this.button28.UseVisualStyleBackColor = true;
+            this.button28.UseVisualStyleBackColor = false;
             this.button28.Visible = false;
             this.button28.Click += new System.EventHandler(this.Button28Click);
             // 
