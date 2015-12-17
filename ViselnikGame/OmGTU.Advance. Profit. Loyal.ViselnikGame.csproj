@@ -143,6 +143,7 @@
     <Content Include="Resources\0.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\1x1aim.png" />
     <Content Include="Resources\6.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -166,6 +167,7 @@
     </Content>
     <None Include="Resources\average.jpg" />
     <None Include="Resources\easy.jpg" />
+    <None Include="Resources\896700.gif" />
     <Content Include="Resources\FOOD.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
