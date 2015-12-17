@@ -164,12 +164,17 @@
     <Content Include="Resources\7.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\average.jpg" />
+    <None Include="Resources\easy.jpg" />
     <Content Include="Resources\FOOD.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\animals.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\hard.jpg" />
+    <None Include="Resources\next_world.jpg" />
+    <None Include="Resources\surrenden.jpg" />
     <Content Include="Resources\transport.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
